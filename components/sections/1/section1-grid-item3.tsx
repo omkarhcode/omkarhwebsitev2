@@ -14,7 +14,15 @@ import {
 const Section1GridItem3 = () => {
   return (
     <GridItem rowSpan={3} colSpan={1}>
-      <Box bg="black2" borderRadius={"20px"} p={"20px"} h="100%">
+      <Box
+        bg="black2"
+        borderRadius={"20px"}
+        p={"20px"}
+        display="flex"
+        flexDirection="column"
+        justifyContent="space-between"
+        height="100%"
+      >
         <Text>Box 5</Text>
         <Text>half height</Text>
       </Box>

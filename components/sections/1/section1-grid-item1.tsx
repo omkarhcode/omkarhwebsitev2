@@ -13,7 +13,15 @@ import {
 const Section1GridItem1 = () => {
   return (
     <GridItem rowSpan={3} colSpan={1} className="section1-grid-item1">
-      <Box bg="black2" borderRadius={"20px"} p={"20px"} h="100%">
+      <Box
+        bg="black2"
+        borderRadius={"20px"}
+        p={"20px"}
+        display="flex"
+        flexDirection="column"
+        justifyContent="space-between"
+        height="100%"
+      >
         <Flex>
           <Box
             bg="whiteAlpha.300"
@@ -44,18 +52,18 @@ const Section1GridItem1 = () => {
         <Text
           fontSize={"44px"}
           fontWeight={"500"}
-          lineHeight={"50px"}
+          lineHeight={"60px"}
           letterSpacing={0.01}
         >
           Your Vision, <br /> My Expertise
         </Text>
         <Spacer p={"10px"} />
-        <Text fontSize={"20px"} fontWeight={"400"}>
+        <Text fontSize={"20px"} fontWeight={"400"} color={"whiteAlpha.800"}>
           Omkar N Hatalkar
         </Text>
-        <Text color={"whiteAlpha.600"} fontSize={"16px"} fontWeight={"400"}>
+        {/* <Text color={"whiteAlpha.600"} fontSize={"16px"} fontWeight={"400"}>
           Full Stack and Mobile App Developer
-        </Text>
+        </Text> */}
       </Box>
     </GridItem>
   );
