@@ -4,6 +4,7 @@ import {
   Button,
   Flex,
   HStack,
+  Kbd,
   Link,
   Spacer,
   Text,
@@ -116,18 +117,15 @@ const PageLayout = ({ children }: PageInterface) => {
       <chakra.header id="header">
         <Box
           w="100%"
-          background="whiteAlpha.100"
+          background="blackAlpha.600"
+          // background="black"
           backdropFilter={"blur(40px)"}
           position="fixed"
           zIndex="999"
           boxShadow="sm"
+          px={{ base: "40px", md: "180px" }}
         >
-          <Flex
-            px={{ base: "4", sm: "10", md: "50", lg: "100" }}
-            h={20}
-            align="center"
-            justify="space-between"
-          >
+          <Flex h={20} align="center" justify="space-between">
             <Box>
               <Link
                 as={NextLink}
@@ -145,9 +143,20 @@ const PageLayout = ({ children }: PageInterface) => {
                     lineHeight={"30px"}
                   >
                     OmkarH{" "}
-                    <Box as="span" color={"GrayText"}>
+                    <Kbd
+                      color={"whiteAlpha.600"}
+                      background={"black2"}
+                      py={"5px"}
+                      px={"8px"}
+                      fontSize={"12px"}
+                      fontWeight={"200"}
+                      letterSpacing={"0.5px"}
+                      position={"relative"}
+                      top={"-10px"}
+                      borderColor={"whiteAlpha.400"}
+                    >
                       Portfolio
-                    </Box>
+                    </Kbd>
                   </Text>
                 </Flex>
               </Link>
@@ -155,43 +164,52 @@ const PageLayout = ({ children }: PageInterface) => {
             <Spacer />
             <HStack
               as="nav"
-              spacing={{ base: "24px", xl: "42px" }}
+              spacing={{ base: "24px", xl: "22px" }}
               display={{ base: "none", lg: "flex" }}
-              mr={{ base: "24px", xl: "42px" }}
+              // mr={{ base: "24px", xl: "42px" }}
             >
               <Link
                 as={NextLink}
                 color="white"
                 fontWeight="400"
-                fontSize="18px"
-                line-height="20px"
-                href="/pricing"
+                fontSize="16px"
+                background={"whiteAlpha.200"}
+                borderRadius={"20px"}
+                py={"5px"}
+                px={"10px"}
+                href="#about"
               >
-                Pricing
+                about me.
               </Link>
               <Link
                 as={NextLink}
                 color="white"
                 fontWeight="400"
-                fontSize="18px"
-                line-height="20px"
-                href="/faq"
+                fontSize="16px"
+                background={"whiteAlpha.200"}
+                borderRadius={"20px"}
+                py={"5px"}
+                px={"10px"}
+                href="#work"
               >
-                FAQ
+                work.
               </Link>
               <Link
                 as={NextLink}
                 color="white"
                 fontWeight="400"
-                fontSize="18px"
-                line-height="20px"
-                href="/feedback"
+                fontSize="16px"
+                background={"whiteAlpha.200"}
+                borderRadius={"20px"}
+                py={"5px"}
+                px={"10px"}
+                href="#contact"
               >
-                Feedback
+                contact.
               </Link>
             </HStack>
             <HStack>
-              <Link
+              {/* <Link
                 bgGradient="linear-gradient(0deg, #7421FC, #7421FC), linear-gradient(92.05deg, #3084FE 3.13%, #1136F9 98.7%)"
                 color="white"
                 width={{ base: "100%", md: "auto", lg: "auto" }}
@@ -209,9 +227,9 @@ const PageLayout = ({ children }: PageInterface) => {
                 href="/auth/signin"
               >
                 Sign in
-              </Link>
+              </Link> */}
 
-              <Button
+              {/* <Button
                 onClick={() => {
                   console.log("ButtonCLocked");
                 }}
@@ -226,7 +244,7 @@ const PageLayout = ({ children }: PageInterface) => {
                 _hover={{ bg: "transparent" }}
               >
                 BUTTON
-              </Button>
+              </Button> */}
             </HStack>
           </Flex>
         </Box>
