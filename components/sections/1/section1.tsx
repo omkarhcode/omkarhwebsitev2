@@ -18,6 +18,8 @@ import {
   WrapItem,
 } from "@chakra-ui/react";
 import Section1GridItem1 from "./section1-grid-item1";
+import Section1GridItem2 from "./section1-grid-item2";
+import Section1GridItem3 from "./section1-grid-item3";
 
 const Section1 = () => {
   return (
@@ -28,34 +30,8 @@ const Section1 = () => {
         gap={"20px"}
       >
         <Section1GridItem1 />
-        <GridItem rowSpan={3} colSpan={1}>
-          <Grid templateRows="repeat(3, 1fr)" gap={4}>
-            <GridItem rowSpan={1} colSpan={1}>
-              <Box bg="black2" borderRadius={"20px"} p={"20px"} h="100%">
-                <Text>Box 2</Text>
-                <Text>1/3</Text>
-              </Box>
-            </GridItem>
-            <GridItem rowSpan={1} colSpan={1}>
-              <Box bg="black2" borderRadius={"20px"} p={"20px"} h="100%">
-                <Text>Box 3</Text>
-                <Text>2/3</Text>
-              </Box>
-            </GridItem>
-            <GridItem rowSpan={1} colSpan={1}>
-              <Box bg="black2" borderRadius={"20px"} p={"20px"} h="100%">
-                <Text>Box 4</Text>
-                <Text>3/3</Text>
-              </Box>
-            </GridItem>
-          </Grid>
-        </GridItem>
-        <GridItem rowSpan={3} colSpan={1}>
-          <Box bg="black2" borderRadius={"20px"} p={"20px"} h="100%">
-            <Text>Box 5</Text>
-            <Text>half height</Text>
-          </Box>
-        </GridItem>
+        <Section1GridItem2 />
+        <Section1GridItem3 />
       </Grid>
     </>
   );
