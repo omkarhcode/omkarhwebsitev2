@@ -34,8 +34,8 @@ const Section1GridItem1 = () => {
           <Spacer />
           <Center transform="rotate(-90deg)">
             <Image
-              src="arrow-to-down-left-svgrepo-com.svg"
-              alt="Smaint Solution Logo"
+              src="arrow-to-left.svg"
+              alt="arrow svg"
               className="arrow-image"
             />
           </Center>
