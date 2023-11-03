@@ -117,13 +117,13 @@ const PageLayout = ({ children }: PageInterface) => {
       <chakra.header id="header">
         <Box
           w="100%"
-          background="blackAlpha.600"
-          // background="black"
+          // background="whiteAlpha.100"
+          background="blackAlpha.100"
           backdropFilter={"blur(40px)"}
           position="fixed"
           zIndex="999"
           boxShadow="sm"
-          px={{ base: "40px", md: "180px" }}
+          px={{ base: "40px", lg: "100px", xl: "180px" }}
         >
           <Flex h={20} align="center" justify="space-between">
             <Box>
@@ -253,13 +253,12 @@ const PageLayout = ({ children }: PageInterface) => {
 
       <Flex
         position="relative"
-        py="70px"
+        py="120px"
         w="100%"
         direction="column"
         justifyContent="flex-start"
-        alignItems="flex-start"
-        px={{ base: "40px", md: "180px" }}
-        pt={{ base: "200px", sm: "180px", md: "180px" }}
+        // alignItems="flex-start"
+        px={{ base: "40px", lg: "100px", xl: "180px" }}
       >
         {children}
       </Flex>

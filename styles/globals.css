@@ -1,0 +1,8 @@
+.section1-grid-item1 .arrow-image {
+  transition: transform 1s;
+}
+
+.section1-grid-item1:hover .arrow-image {
+  transform: translate(0px, -10px);
+  transition: transform 1s;
+}
