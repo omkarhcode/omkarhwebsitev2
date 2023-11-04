@@ -29,6 +29,7 @@ const Section1GridItem1 = () => {
             h={{ base: "80px", sm: "100px" }}
             borderRadius={"full"}
             overflow={"hidden"}
+            className="smiling-image"
           >
             <Center transform="rotate(-10deg)">
               <Image

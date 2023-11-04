@@ -19,6 +19,7 @@ const theme = extendTheme({
   colors: {
     black: "#0f0f0f",
     black2: "#1a1a1a",
+    gray: "#515151",
   },
   config: {
     initialColorMode: "dark",
