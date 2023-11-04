@@ -1,29 +1,36 @@
-// components/sections/1/section1-grid-item1.tsx
-
+// components/sections/1/section1-grid-item3.tsx
 import {
   Box,
   Button,
-  ButtonGroup,
   Center,
   Flex,
-  Grid,
   GridItem,
-  HStack,
   Image,
   Spacer,
   Stack,
   Text,
 } from "@chakra-ui/react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
-import { PhoneIcon, EmailIcon } from "@chakra-ui/icons";
+import { PhoneIcon, EmailIcon, CopyIcon } from "@chakra-ui/icons";
 
 const Section1GridItem3 = () => {
   const [hoverHand, setHoverHand] = useState(false);
+
   const handleHoverHand = () => {
     setHoverHand(!hoverHand);
   };
 
+  const copyToClipboard = (content: any) => {
+    navigator.clipboard.writeText(content).then(
+      () => {
+        console.log("Copied to clipboard:", content);
+      },
+      (err) => {
+        console.error("Error copying:", err);
+      }
+    );
+  };
   return (
     <GridItem rowSpan={3} colSpan={1} className="section1-grid-item3">
       <Box
@@ -40,13 +47,18 @@ const Section1GridItem3 = () => {
       >
         <Spacer />
         <Center>
-          <HStack spacing={"20px"}>
-            <Stack
-              direction={{ base: "column", sm: "row", lg: "column", xl: "row" }}
-              spacing={"20px"}
-              alignItems={"center"}
-            >
-              <a href="tel:+919820805873" style={{ color: "inherit" }}>
+          <Stack
+            spacing={{ base: "20px", md: "40px", lg: "20px" }}
+            direction={{
+              base: "column",
+              sm: "column",
+              md: "row",
+              lg: "column",
+              xl: "column",
+            }}
+          >
+            <Flex direction={"column"} alignItems={"center"}>
+              <a href="tel:+919820805873">
                 <Button
                   rightIcon={<PhoneIcon />}
                   variant="solid"
@@ -77,6 +89,32 @@ const Section1GridItem3 = () => {
                   Call
                 </Button>
               </a>
+              {/* Phone button with phone number */}
+              <Button
+                rightIcon={<CopyIcon />}
+                bgColor={"transparent"}
+                color={"white"}
+                fontSize={{ base: "16px" }}
+                py={{
+                  base: "14px",
+                }}
+                px={{
+                  base: "0px",
+                }}
+                _hover={{
+                  textDecoration: "underline",
+                  color: "#ffffff",
+                }}
+                _active={{
+                  backgroundColor: "transparent",
+                }}
+                transition="all 0.3s"
+                onClick={() => copyToClipboard("+919820805873")}
+              >
+                +91-9820-805-873
+              </Button>
+            </Flex>
+            <Flex direction={"column"} alignItems={"center"}>
               <a href="mailto:omkarh.work@gmail.com">
                 <Button
                   leftIcon={<EmailIcon />}
@@ -108,27 +146,34 @@ const Section1GridItem3 = () => {
                   Email
                 </Button>
               </a>
-            </Stack>
-          </HStack>
+
+              <Button
+                rightIcon={<CopyIcon />}
+                bgColor={"transparent"}
+                color={"white"}
+                fontSize={{ base: "16px" }}
+                py={{
+                  base: "14px",
+                }}
+                px={{
+                  base: "0px",
+                }}
+                _hover={{
+                  textDecoration: "underline",
+                  color: "#ffffff",
+                }}
+                _active={{
+                  backgroundColor: "transparent",
+                }}
+                transition="all 0.3s"
+                onClick={() => copyToClipboard("omkarh.work@gmail.com")}
+              >
+                omkarh.work@gmail.com
+              </Button>
+            </Flex>
+          </Stack>
         </Center>
-        <Spacer py={{ base: "10px", lg: "0" }} />
-        <Center>
-          <Text
-            fontSize={{
-              base: "20px",
-              sm: "26px",
-              lg: "20px",
-              xl: "30px",
-              "2xl": "38px",
-            }}
-            lineHeight={{ xl: "44px", "2xl": "54px" }}
-            fontWeight={"600"}
-            letterSpacing={"tight"}
-          >
-            Get in Touch!
-          </Text>
-        </Center>
-        <Spacer py={{ base: "10px", lg: "0" }} />
+        <Spacer py={{ base: "10px", lg: "10px" }} />
         <Center>
           <Box
             position="relative"
@@ -157,7 +202,18 @@ const Section1GridItem3 = () => {
             />
           </Box>
         </Center>
-        <Spacer />
+        <Spacer py={{ base: "10px", lg: "0" }} />
+        <Center>
+          <Text
+            fontSize={{
+              base: "20px",
+            }}
+            fontWeight={"600"}
+            letterSpacing={"tight"}
+          >
+            Get in Touch!
+          </Text>
+        </Center>
       </Box>
     </GridItem>
   );
