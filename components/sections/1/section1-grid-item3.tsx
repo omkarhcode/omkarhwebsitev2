@@ -9,6 +9,7 @@ import {
   Spacer,
   Stack,
   Text,
+  Tooltip,
 } from "@chakra-ui/react";
 import { useRef, useState } from "react";
 
@@ -16,21 +17,36 @@ import { PhoneIcon, EmailIcon, CopyIcon } from "@chakra-ui/icons";
 
 const Section1GridItem3 = () => {
   const [hoverHand, setHoverHand] = useState(false);
+  const [showCopied, setShowCopied] = useState(false);
+  const [copiedItemPosition, setCopiedItemPosition] = useState({ x: 0, y: 0 });
+  const phoneRef = useRef(null);
+  const emailRef = useRef(null);
 
   const handleHoverHand = () => {
     setHoverHand(!hoverHand);
   };
 
-  const copyToClipboard = (content: any) => {
-    navigator.clipboard.writeText(content).then(
-      () => {
-        console.log("Copied to clipboard:", content);
-      },
-      (err) => {
-        console.error("Error copying:", err);
-      }
-    );
+  const copyToClipboard = (content: any, e: any) => {
+    if (phoneRef.current && emailRef.current) {
+      navigator.clipboard.writeText(content).then(
+        () => {
+          console.log("Copied to clipboard:", content);
+          const { pageX, pageY } = e;
+
+          setCopiedItemPosition({ x: pageX, y: pageY });
+
+          setShowCopied(true);
+          setTimeout(() => {
+            setShowCopied(false);
+          }, 1000); // Hide "Copied!" after 2 seconds
+        },
+        (err) => {
+          console.error("Error copying:", err);
+        }
+      );
+    }
   };
+
   return (
     <GridItem rowSpan={3} colSpan={1} className="section1-grid-item3">
       <Box
@@ -90,29 +106,39 @@ const Section1GridItem3 = () => {
                 </Button>
               </a>
               {/* Phone button with phone number */}
-              <Button
-                rightIcon={<CopyIcon />}
-                bgColor={"transparent"}
-                color={"white"}
-                fontSize={{ base: "16px" }}
-                py={{
-                  base: "14px",
-                }}
-                px={{
-                  base: "0px",
-                }}
-                _hover={{
-                  textDecoration: "underline",
-                  color: "#ffffff",
-                }}
-                _active={{
-                  backgroundColor: "transparent",
-                }}
-                transition="all 0.3s"
-                onClick={() => copyToClipboard("+919820805873")}
+              <Tooltip
+                label="Copy Number"
+                aria-label="copy email"
+                hasArrow
+                bg={"whiteAlpha.900"}
+                color={"blackAlpha.600"}
+                placement="right"
               >
-                +91-9820-805-873
-              </Button>
+                <Button
+                  ref={phoneRef}
+                  rightIcon={<CopyIcon />}
+                  bgColor={"transparent"}
+                  color={"white"}
+                  fontSize={{ base: "16px" }}
+                  py={{
+                    base: "14px",
+                  }}
+                  px={{
+                    base: "0px",
+                  }}
+                  _hover={{
+                    textDecoration: "underline",
+                    color: "#ffffff",
+                  }}
+                  _active={{
+                    backgroundColor: "transparent",
+                  }}
+                  transition="all 0.3s"
+                  onClick={(e) => copyToClipboard("+919820805873", e)}
+                >
+                  +91-9820-805-873
+                </Button>
+              </Tooltip>
             </Flex>
             <Flex direction={"column"} alignItems={"center"}>
               <a href="mailto:omkarh.work@gmail.com">
@@ -147,29 +173,39 @@ const Section1GridItem3 = () => {
                 </Button>
               </a>
 
-              <Button
-                rightIcon={<CopyIcon />}
-                bgColor={"transparent"}
-                color={"white"}
-                fontSize={{ base: "16px" }}
-                py={{
-                  base: "14px",
-                }}
-                px={{
-                  base: "0px",
-                }}
-                _hover={{
-                  textDecoration: "underline",
-                  color: "#ffffff",
-                }}
-                _active={{
-                  backgroundColor: "transparent",
-                }}
-                transition="all 0.3s"
-                onClick={() => copyToClipboard("omkarh.work@gmail.com")}
+              <Tooltip
+                label="Copy Email"
+                aria-label="copy email"
+                hasArrow
+                bg={"whiteAlpha.900"}
+                color={"blackAlpha.600"}
+                placement="right"
               >
-                omkarh.work@gmail.com
-              </Button>
+                <Button
+                  ref={emailRef}
+                  rightIcon={<CopyIcon />}
+                  bgColor={"transparent"}
+                  color={"white"}
+                  fontSize={{ base: "16px" }}
+                  py={{
+                    base: "14px",
+                  }}
+                  px={{
+                    base: "0px",
+                  }}
+                  _hover={{
+                    textDecoration: "underline",
+                    color: "#ffffff",
+                  }}
+                  _active={{
+                    backgroundColor: "transparent",
+                  }}
+                  transition="all 0.3s"
+                  onClick={(e) => copyToClipboard("omkarh.work@gmail.com", e)}
+                >
+                  omkarh.work@gmail.com
+                </Button>
+              </Tooltip>
             </Flex>
           </Stack>
         </Center>
@@ -214,6 +250,22 @@ const Section1GridItem3 = () => {
             Get in Touch!
           </Text>
         </Center>
+
+        {showCopied && (
+          <Box
+            position="absolute"
+            bg="white"
+            p="5px 10px"
+            borderRadius="4px"
+            top={copiedItemPosition.y}
+            left={copiedItemPosition.x}
+            boxShadow="0 2px 5px 1px rgba(0,0,0,0.2)"
+          >
+            <Text fontSize="14px" color="green">
+              Copied!
+            </Text>
+          </Box>
+        )}
       </Box>
     </GridItem>
   );
