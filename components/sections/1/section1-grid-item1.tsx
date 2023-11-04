@@ -20,13 +20,13 @@ const Section1GridItem1 = () => {
         display="flex"
         flexDirection="column"
         justifyContent="space-between"
-        height="100%"
+        height={"100%"}
       >
         <Flex>
           <Box
             bg="whiteAlpha.300"
-            w={"100px"}
-            h={"100px"}
+            w={{ base: "80px", lg: "100px" }}
+            h={{ base: "80px", lg: "100px" }}
             borderRadius={"full"}
             overflow={"hidden"}
           >
@@ -35,30 +35,49 @@ const Section1GridItem1 = () => {
                 src="/smiling-min.png"
                 alt="OmkarH Image"
                 borderRadius="full"
-                h={"100px"}
+                h={{ base: "80px", lg: "100px" }}
               />
             </Center>
           </Box>{" "}
           <Spacer />
-          <Center transform="rotate(-90deg)">
+          <Center display={{ base: "flex", lg: "none" }}>
+            <Text
+              fontSize={{ base: "18px" }}
+              lineHeight={{ base: "26px" }}
+              fontWeight={"500"}
+              letterSpacing={0.01}
+            >
+              Your Vision, <br /> My Expertise
+            </Text>
+          </Center>
+          <Center
+            transform="rotate(-90deg)"
+            display={{ base: "none", lg: "flex" }}
+          >
             <Image
               src="arrow-to-left.svg"
               alt="arrow svg"
               className="arrow-image"
+              boxSize={{ lg: "56px", xl: "60px", "2xl": "70px" }}
             />
           </Center>
         </Flex>
-        <Spacer p={"10px"} />
+        <Spacer p={"10px"} display={{ base: "none", lg: "flex" }} />
         <Text
-          fontSize={"44px"}
+          fontSize={{ lg: "30px", xl: "34px", "2xl": "38px" }}
+          lineHeight={{ lg: "44px", xl: "48px", "2xl": "54px" }}
           fontWeight={"500"}
-          lineHeight={"60px"}
           letterSpacing={0.01}
+          display={{ base: "none", lg: "flex" }}
         >
           Your Vision, <br /> My Expertise
         </Text>
         <Spacer p={"10px"} />
-        <Text fontSize={"20px"} fontWeight={"400"} color={"whiteAlpha.800"}>
+        <Text
+          fontSize={{ base: "16px", lg: "20px" }}
+          fontWeight={"400"}
+          color={"whiteAlpha.800"}
+        >
           Omkar N Hatalkar
         </Text>
         {/* <Text color={"whiteAlpha.600"} fontSize={"16px"} fontWeight={"400"}>

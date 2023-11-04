@@ -54,14 +54,30 @@ const Section1GridItem2 = () => {
             >
               <Text
                 color={"whiteAlpha.500"}
-                fontSize={"24px"}
-                fontWeight={"600"}
-                // letterSpacing={"tight"}
+                fontSize={{
+                  base: "16px",
+                  lg: "16px",
+                  xl: "18px",
+                  "2xl": "22px",
+                }}
+                fontWeight={"700"}
+                letterSpacing={"tight"}
               >
                 Title
               </Text>
               <Text
-                fontSize={"26px"}
+                fontSize={{
+                  base: "16px",
+                  lg: "16px",
+                  xl: "22px",
+                  "2xl": "24px",
+                }}
+                lineHeight={{
+                  base: "26px",
+                  lg: "26px",
+                  xl: "32px",
+                  "2xl": "34px",
+                }}
                 fontWeight={"600"}
                 letterSpacing={"tight"}
               >
@@ -74,6 +90,12 @@ const Section1GridItem2 = () => {
                 src="app-developer.svg"
                 alt="Smaint Solution Logo"
                 className="developer-image"
+                boxSize={{
+                  base: "32px",
+                  lg: "34px",
+                  xl: "42px",
+                  "2xl": "50px",
+                }}
               />
             </Center>
           </Flex>
@@ -94,7 +116,7 @@ const Section1GridItem2 = () => {
               flexDirection="column"
               justifyContent="space-between"
               // height="80px"
-              py={"20px"}
+              py={"15px"}
             >
               <Center height="100%">
                 <Image
@@ -105,6 +127,12 @@ const Section1GridItem2 = () => {
                   transition="all 21s"
                   display="block"
                   mx="auto"
+                  boxSize={{
+                    base: "28px",
+                    lg: "30px",
+                    xl: "34px",
+                    "2xl": "40px",
+                  }}
                 />
               </Center>
             </Box>
@@ -126,7 +154,7 @@ const Section1GridItem2 = () => {
               flexDirection="column"
               justifyContent="space-between"
               // height="80px"
-              py={"20px"}
+              py={"15px"}
             >
               <Center height="100%">
                 <Image
@@ -135,6 +163,12 @@ const Section1GridItem2 = () => {
                   transition="all 21s"
                   display="block"
                   mx="auto"
+                  boxSize={{
+                    base: "28px",
+                    lg: "30px",
+                    xl: "34px",
+                    "2xl": "40px",
+                  }}
                 />
               </Center>
             </Box>
@@ -157,7 +191,7 @@ const Section1GridItem2 = () => {
               flexDirection="column"
               justifyContent="space-between"
               // height="80px"
-              py={"20px"}
+              py={"15px"}
             >
               <Center height="100%">
                 <Image
@@ -166,6 +200,12 @@ const Section1GridItem2 = () => {
                   transition="all 21s"
                   display="block"
                   mx="auto"
+                  boxSize={{
+                    base: "28px",
+                    lg: "30px",
+                    xl: "34px",
+                    "2xl": "40px",
+                  }}
                 />
               </Center>
             </Box>
@@ -194,14 +234,14 @@ const Section1GridItem2 = () => {
               >
                 <Text
                   color={"whiteAlpha.600"}
-                  fontSize={"16px"}
+                  fontSize={{ base: "16px", lg: "16px", xl: "18px" }}
                   fontWeight={"400"}
                   // letterSpacing={"tight"}
                 >
                   Based In
                 </Text>
                 <Text
-                  fontSize={"20px"}
+                  fontSize={{ base: "18px", lg: "18px", xl: "22px" }}
                   fontWeight={"400"}
                   letterSpacing={"tight"}
                 >
@@ -211,7 +251,21 @@ const Section1GridItem2 = () => {
               </Box>
               <Spacer />
               <Center>
-                <Box position="relative" width="60px" height="60px">
+                <Box
+                  position="relative"
+                  width={{
+                    base: "44px",
+                    lg: "44px",
+                    xl: "50px",
+                    "2xl": "60px",
+                  }}
+                  height={{
+                    base: "44px",
+                    lg: "44px",
+                    xl: "50px",
+                    "2xl": "60px",
+                  }}
+                >
                   <Image
                     src="India-black.svg"
                     alt="India"
@@ -220,6 +274,12 @@ const Section1GridItem2 = () => {
                     position="absolute"
                     top={0}
                     left={0}
+                    boxSize={{
+                      base: "44px",
+                      lg: "44px",
+                      xl: "50px",
+                      "2xl": "60px",
+                    }}
                   />
                   <Image
                     src="India-color.svg"
@@ -229,6 +289,12 @@ const Section1GridItem2 = () => {
                     position="absolute"
                     top={0}
                     left={0}
+                    boxSize={{
+                      base: "44px",
+                      lg: "44px",
+                      xl: "50px",
+                      "2xl": "60px",
+                    }}
                   />
                 </Box>
               </Center>

@@ -123,7 +123,13 @@ const PageLayout = ({ children }: PageInterface) => {
           position="fixed"
           zIndex="999"
           boxShadow="sm"
-          px={{ base: "40px", lg: "100px", xl: "180px" }}
+          px={{
+            base: "20px",
+            sm: "40px",
+            lg: "100px",
+            xl: "180px",
+            "2xl": "250px",
+          }}
         >
           <Flex h={20} align="center" justify="space-between">
             <Box>
@@ -252,70 +258,24 @@ const PageLayout = ({ children }: PageInterface) => {
       {/* Nav - end */}
 
       <Flex
-        position="relative"
+        // position="relative"
         py="120px"
         w="100%"
         direction="column"
-        justifyContent="flex-start"
-        // alignItems="flex-start"
-        px={{ base: "40px", lg: "100px", xl: "180px" }}
+        // justifyContent="flex-start"
+        alignItems={"center"}
+        px={{
+          base: "20px",
+          sm: "40px",
+          md: "40px",
+          lg: "80px",
+          xl: "120px",
+          "2xl": "180px",
+        }}
       >
         {children}
       </Flex>
       {/* Footer - START */}
-      <Box
-        backgroundColor="#451397"
-        backgroundSize={"cover"}
-        mt={{ base: "80px", md: "100px" }}
-        px={{ base: "65px", md: "300px" }}
-        py={{ base: "133px", md: "133px" }}
-        css={{
-          "@media (max-width: 768px)": {
-            backgroundColor: "#451397",
-          },
-        }}
-      >
-        <Flex
-          flexDirection="column"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <Text
-            color={"white"}
-            mt="45px"
-            mb="60px"
-            fontWeight="400"
-            fontSize={{ base: "16px", md: "18px" }}
-            lineHeight={{ base: "24px", md: "27px" }}
-            textAlign={{ base: "center", md: "center" }}
-          >
-            Stay connected with us on social media
-            <Box as="span" display={{ base: "none", md: "inline" }}>
-              <br />
-            </Box>{" "}
-            for the latest news, updates, and behind-the-scenes glimpses of
-            AiBoat
-          </Text>
-          <HStack spacing={{ base: "63px", md: "63px" }}>
-            <Link href="https://facebook.com" isExternal>
-              {/* <FacebookCircleFillIcon color="#fff" size="24px" /> */}
-              FB
-            </Link>
-            <Link href="https://linkedin.com" isExternal>
-              {/* <LinkedinBoxFillIcon color="#fff" size="24px" /> */}
-              LI
-            </Link>
-            <Link href="https://twitter.com" isExternal>
-              {/* <TwitterFillIcon color="#fff" size="24px" /> */}X
-            </Link>
-            <Link href="https://instagram.com" isExternal>
-              {/* <InstagramFillIcon color="#fff" size="24px" /> */}
-              IN
-            </Link>
-          </HStack>
-        </Flex>
-      </Box>
-      {/* Footer - END */}
     </>
   );
 };

@@ -41,15 +41,20 @@ const Section1GridItem3 = () => {
         <Spacer />
         <Center>
           <HStack spacing={"20px"}>
-            <Stack direction="row" spacing={4}>
+            <Stack
+              direction={{ base: "column", lg: "column", xl: "row" }}
+              spacing={"20px"}
+              alignItems={"center"}
+            >
               <a href="tel:+919820805873" style={{ color: "inherit" }}>
                 <Button
                   rightIcon={<PhoneIcon />}
                   variant="solid"
                   bgColor={"#a01fbf"}
-                  color={"whiteAlpha.800"}
-                  fontSize={"22px"}
-                  p={"30px"}
+                  color={"white"}
+                  fontSize={{ lg: "18px", xl: "22px" }}
+                  py={{ base: "24px", lg: "26px", xl: "26px", "2xl": "30px" }}
+                  px={{ base: "20px", lg: "20px", xl: "20px", "2xl": "26px" }}
                   borderRadius={"30px"}
                   _hover={{
                     bgColor: "whiteAlpha.300",
@@ -65,9 +70,10 @@ const Section1GridItem3 = () => {
                   leftIcon={<EmailIcon />}
                   variant="solid"
                   bgColor={"#00FFFF"}
-                  color={"blackAlpha.800"}
-                  fontSize={"22px"}
-                  p={"30px"}
+                  color={"black"}
+                  fontSize={{ lg: "18px", xl: "22px" }}
+                  py={{ base: "24px", lg: "26px", xl: "26px", "2xl": "30px" }}
+                  px={{ base: "20px", lg: "20px", xl: "20px", "2xl": "26px" }}
                   borderRadius={"30px"}
                   _hover={{
                     bgColor: "whiteAlpha.300",
@@ -81,15 +87,24 @@ const Section1GridItem3 = () => {
             </Stack>
           </HStack>
         </Center>
-        <Spacer />
+        <Spacer py={{ base: "10px", lg: "0" }} />
         <Center>
-          <Text fontSize={"46px"} fontWeight={"600"} letterSpacing={"tight"}>
+          <Text
+            fontSize={{ base: "20px", lg: "20px", xl: "30px", "2xl": "38px" }}
+            lineHeight={{ xl: "44px", "2xl": "54px" }}
+            fontWeight={"600"}
+            letterSpacing={"tight"}
+          >
             Get in Touch!
           </Text>
         </Center>
-        <Spacer />
+        <Spacer py={{ base: "10px", lg: "0" }} />
         <Center>
-          <Box position="relative" width="60px" height="60px">
+          <Box
+            position="relative"
+            width={{ base: "44px", lg: "44px", xl: "60px" }}
+            height={{ base: "44px", lg: "44px", xl: "60px" }}
+          >
             <Image
               src="GetInTouch-black.svg"
               alt="GetInTouch"
