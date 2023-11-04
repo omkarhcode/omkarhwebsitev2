@@ -80,90 +80,96 @@ const Section1GridItem2 = () => {
         </GridItem>
         {/* Inner - Grid 2 - LinkedIn */}
         <GridItem rowSpan={1} colSpan={1}>
-          <Box
-            bg={hoverLinkedIn ? "#0072b1" : "black2"}
-            borderRadius={"20px"}
-            transition="background-color 0.5s"
-            _hover={{
-              bg: "#0072b1",
-            }}
-            onMouseEnter={handleHoverLinkedIn}
-            onMouseLeave={handleHoverLinkedIn}
-            display="flex"
-            flexDirection="column"
-            justifyContent="space-between"
-            // height="80px"
-            py={"20px"}
-          >
-            <Center height="100%">
-              <Image
-                src={
-                  hoverLinkedIn ? "linkedin-white.svg" : "linkedin-black.svg"
-                }
-                alt="LinkedIn Logo"
-                transition="all 21s"
-                display="block"
-                mx="auto"
-              />
-            </Center>
-          </Box>
+          <a href="https://www.linkedin.com/in/omkarh/" target="_blank">
+            <Box
+              bg={hoverLinkedIn ? "#0072b1" : "black2"}
+              borderRadius={"20px"}
+              transition="background-color 0.5s"
+              _hover={{
+                bg: "#0072b1",
+              }}
+              onMouseEnter={handleHoverLinkedIn}
+              onMouseLeave={handleHoverLinkedIn}
+              display="flex"
+              flexDirection="column"
+              justifyContent="space-between"
+              // height="80px"
+              py={"20px"}
+            >
+              <Center height="100%">
+                <Image
+                  src={
+                    hoverLinkedIn ? "linkedin-white.svg" : "linkedin-black.svg"
+                  }
+                  alt="LinkedIn Logo"
+                  transition="all 21s"
+                  display="block"
+                  mx="auto"
+                />
+              </Center>
+            </Box>
+          </a>
         </GridItem>
         {/* Inner - Grid 3 - Twitter */}
         <GridItem rowSpan={1} colSpan={1}>
-          <Box
-            bg={hoverTwitter ? "#1da1f2" : "black2"}
-            borderRadius={"20px"}
-            transition="background-color 0.5s"
-            _hover={{
-              bg: "#1da1f2",
-            }}
-            onMouseEnter={handleHoverTwitter}
-            onMouseLeave={handleHoverTwitter}
-            display="flex"
-            flexDirection="column"
-            justifyContent="space-between"
-            // height="80px"
-            py={"20px"}
-          >
-            <Center height="100%">
-              <Image
-                src={hoverTwitter ? "twitter-white.svg" : "twitter-black.svg"}
-                alt="Twitter Logo"
-                transition="all 21s"
-                display="block"
-                mx="auto"
-              />
-            </Center>
-          </Box>
+          <a href="https://twitter.com/OHatalkar" target="_blank">
+            <Box
+              bg={hoverTwitter ? "#1da1f2" : "black2"}
+              borderRadius={"20px"}
+              transition="background-color 0.5s"
+              _hover={{
+                bg: "#1da1f2",
+              }}
+              onMouseEnter={handleHoverTwitter}
+              onMouseLeave={handleHoverTwitter}
+              display="flex"
+              flexDirection="column"
+              justifyContent="space-between"
+              // height="80px"
+              py={"20px"}
+            >
+              <Center height="100%">
+                <Image
+                  src={hoverTwitter ? "twitter-white.svg" : "twitter-black.svg"}
+                  alt="Twitter Logo"
+                  transition="all 21s"
+                  display="block"
+                  mx="auto"
+                />
+              </Center>
+            </Box>
+          </a>
         </GridItem>
         {/* Inner - Grid 4 - GitHub */}
         <GridItem rowSpan={1} colSpan={1}>
-          <Box
-            bg={hoverGitHub ? "#ffa500" : "black2"}
-            borderRadius={"20px"}
-            // h="100%"
-            transition="background-color 0.5s"
-            _hover={{
-              bg: "#ffa500",
-            }}
-            onMouseEnter={handleHoverGitHub}
-            onMouseLeave={handleHoverGitHub}
-            display="flex"
-            flexDirection="column"
-            justifyContent="space-between"
-            // height="80px"
-            py={"20px"}
-          >
-            <Center height="100%">
-              <Image
-                src={hoverGitHub ? "github-white.svg" : "github-black.svg"}
-                alt="GitHub Logo"
-                transition="all 21s"
-                display="block"
-                mx="auto"
-              />
-            </Center>
-          </Box>
+          <a href="https://github.com/omkarhcode/" target="_blank">
+            <Box
+              bg={hoverGitHub ? "#ffa500" : "black2"}
+              borderRadius={"20px"}
+              // h="100%"
+              transition="background-color 0.5s"
+              _hover={{
+                bg: "#ffa500",
+              }}
+              onMouseEnter={handleHoverGitHub}
+              onMouseLeave={handleHoverGitHub}
+              display="flex"
+              flexDirection="column"
+              justifyContent="space-between"
+              // height="80px"
+              py={"20px"}
+            >
+              <Center height="100%">
+                <Image
+                  src={hoverGitHub ? "github-white.svg" : "github-black.svg"}
+                  alt="GitHub Logo"
+                  transition="all 21s"
+                  display="block"
+                  mx="auto"
+                />
+              </Center>
+            </Box>
+          </a>
         </GridItem>
         <GridItem rowSpan={3} colSpan={3} w={"100%"}>
           <Box
