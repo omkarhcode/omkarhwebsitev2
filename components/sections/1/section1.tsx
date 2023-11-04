@@ -41,8 +41,16 @@ const Section1 = () => {
   return (
     <>
       <Grid
-        templateRows={{ md: "repeat(1, 1fr)", lg: "repeat(1, 1fr)" }}
-        templateColumns={{ md: "repeat(1, 1fr)", lg: "repeat(3, 1fr)" }}
+        templateRows={{
+          base: "repeat(1, 1fr)",
+          md: "repeat(1, 1fr)",
+          lg: "repeat(1, 1fr)",
+        }}
+        templateColumns={{
+          base: "repeat(1, 1fr)",
+          md: "repeat(1, 1fr)",
+          lg: "repeat(3, 1fr)",
+        }}
         gap={"20px"}
       >
         <Section1GridItem1 />

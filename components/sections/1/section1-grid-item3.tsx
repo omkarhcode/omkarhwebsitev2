@@ -42,7 +42,7 @@ const Section1GridItem3 = () => {
         <Center>
           <HStack spacing={"20px"}>
             <Stack
-              direction={{ base: "column", lg: "column", xl: "row" }}
+              direction={{ base: "column", sm: "row", lg: "column", xl: "row" }}
               spacing={"20px"}
               alignItems={"center"}
             >
@@ -52,9 +52,21 @@ const Section1GridItem3 = () => {
                   variant="solid"
                   bgColor={"#a01fbf"}
                   color={"white"}
-                  fontSize={{ lg: "18px", xl: "22px" }}
-                  py={{ base: "24px", lg: "26px", xl: "26px", "2xl": "30px" }}
-                  px={{ base: "20px", lg: "20px", xl: "20px", "2xl": "26px" }}
+                  fontSize={{ sm: "20px", lg: "18px", xl: "22px" }}
+                  py={{
+                    base: "24px",
+                    sm: "30px",
+                    lg: "26px",
+                    xl: "26px",
+                    "2xl": "30px",
+                  }}
+                  px={{
+                    base: "20px",
+                    sm: "26px",
+                    lg: "20px",
+                    xl: "20px",
+                    "2xl": "26px",
+                  }}
                   borderRadius={"30px"}
                   _hover={{
                     bgColor: "whiteAlpha.300",
@@ -71,9 +83,21 @@ const Section1GridItem3 = () => {
                   variant="solid"
                   bgColor={"#00FFFF"}
                   color={"black"}
-                  fontSize={{ lg: "18px", xl: "22px" }}
-                  py={{ base: "24px", lg: "26px", xl: "26px", "2xl": "30px" }}
-                  px={{ base: "20px", lg: "20px", xl: "20px", "2xl": "26px" }}
+                  fontSize={{ sm: "20px", lg: "18px", xl: "22px" }}
+                  py={{
+                    base: "24px",
+                    sm: "30px",
+                    lg: "26px",
+                    xl: "26px",
+                    "2xl": "30px",
+                  }}
+                  px={{
+                    base: "20px",
+                    sm: "26px",
+                    lg: "20px",
+                    xl: "20px",
+                    "2xl": "26px",
+                  }}
                   borderRadius={"30px"}
                   _hover={{
                     bgColor: "whiteAlpha.300",
@@ -90,7 +114,13 @@ const Section1GridItem3 = () => {
         <Spacer py={{ base: "10px", lg: "0" }} />
         <Center>
           <Text
-            fontSize={{ base: "20px", lg: "20px", xl: "30px", "2xl": "38px" }}
+            fontSize={{
+              base: "20px",
+              sm: "26px",
+              lg: "20px",
+              xl: "30px",
+              "2xl": "38px",
+            }}
             lineHeight={{ xl: "44px", "2xl": "54px" }}
             fontWeight={"600"}
             letterSpacing={"tight"}
@@ -102,8 +132,8 @@ const Section1GridItem3 = () => {
         <Center>
           <Box
             position="relative"
-            width={{ base: "44px", lg: "44px", xl: "60px" }}
-            height={{ base: "44px", lg: "44px", xl: "60px" }}
+            width={{ base: "44px", sm: "64px", lg: "44px", xl: "60px" }}
+            height={{ base: "44px", sm: "64px", lg: "44px", xl: "60px" }}
           >
             <Image
               src="GetInTouch-black.svg"

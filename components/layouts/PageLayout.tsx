@@ -125,10 +125,11 @@ const PageLayout = ({ children }: PageInterface) => {
           boxShadow="sm"
           px={{
             base: "20px",
-            sm: "40px",
-            lg: "100px",
-            xl: "180px",
-            "2xl": "250px",
+            sm: "50px",
+            md: "180px",
+            lg: "80px",
+            xl: "120px",
+            "2xl": "180px",
           }}
         >
           <Flex h={20} align="center" justify="space-between">
@@ -145,16 +146,16 @@ const PageLayout = ({ children }: PageInterface) => {
                     display="inline-block"
                     color={"white"}
                     fontWeight={500}
-                    fontSize={{ base: "16px", md: "24px" }}
+                    fontSize={{ base: "22px", sm: "26px", md: "26px" }}
                     lineHeight={"30px"}
                   >
                     OmkarH{" "}
                     <Kbd
                       color={"whiteAlpha.600"}
                       background={"black2"}
-                      py={"5px"}
-                      px={"8px"}
-                      fontSize={"12px"}
+                      py={{ base: "3px", sm: "5px" }}
+                      px={{ base: "5px", sm: "8px" }}
+                      fontSize={{ base: "10px", sm: "12px" }}
                       fontWeight={"200"}
                       letterSpacing={"0.5px"}
                       position={"relative"}
@@ -171,7 +172,7 @@ const PageLayout = ({ children }: PageInterface) => {
             <HStack
               as="nav"
               spacing={{ base: "24px", xl: "22px" }}
-              display={{ base: "none", lg: "flex" }}
+              display={{ base: "none" }}
               // mr={{ base: "24px", xl: "42px" }}
             >
               <Link
@@ -214,60 +215,23 @@ const PageLayout = ({ children }: PageInterface) => {
                 contact.
               </Link>
             </HStack>
-            <HStack>
-              {/* <Link
-                bgGradient="linear-gradient(0deg, #7421FC, #7421FC), linear-gradient(92.05deg, #3084FE 3.13%, #1136F9 98.7%)"
-                color="white"
-                width={{ base: "100%", md: "auto", lg: "auto" }}
-                _hover={{
-                  backgroundColor: "red",
-                }}
-                fontSize={{ base: "16px", md: "18px" }}
-                lineHeight={{ base: "19px", md: "20px" }}
-                fontWeight="400"
-                borderRadius={"4px"}
-                px={{ base: "8px", md: "32px" }}
-                py={{ base: "8px", md: "12px" }}
-                // minW={"130px"}
-                textAlign={"center"}
-                href="/auth/signin"
-              >
-                Sign in
-              </Link> */}
-
-              {/* <Button
-                onClick={() => {
-                  console.log("ButtonCLocked");
-                }}
-                color={"white"}
-                // background={'transparent'}
-                border={"1px"}
-                display={{ base: "flex", lg: "none" }}
-                p={"10px"}
-                _focus={{
-                  bg: "transparent",
-                }}
-                _hover={{ bg: "transparent" }}
-              >
-                BUTTON
-              </Button> */}
-            </HStack>
+            <HStack></HStack>
           </Flex>
         </Box>
       </chakra.header>
       {/* Nav - end */}
 
       <Flex
-        // position="relative"
+        position="relative"
         py="120px"
         w="100%"
         direction="column"
-        // justifyContent="flex-start"
-        alignItems={"center"}
+        justifyContent="flex-start"
+        // alignItems={"center"}
         px={{
           base: "20px",
-          sm: "40px",
-          md: "40px",
+          sm: "50px",
+          md: "180px",
           lg: "80px",
           xl: "120px",
           "2xl": "180px",

@@ -56,6 +56,7 @@ const Section1GridItem2 = () => {
                 color={"whiteAlpha.500"}
                 fontSize={{
                   base: "16px",
+                  sm: "20px",
                   lg: "16px",
                   xl: "18px",
                   "2xl": "22px",
@@ -68,12 +69,14 @@ const Section1GridItem2 = () => {
               <Text
                 fontSize={{
                   base: "16px",
+                  sm: "24px",
                   lg: "16px",
                   xl: "22px",
                   "2xl": "24px",
                 }}
                 lineHeight={{
                   base: "26px",
+                  sm: "36px",
                   lg: "26px",
                   xl: "32px",
                   "2xl": "34px",
@@ -88,10 +91,11 @@ const Section1GridItem2 = () => {
             <Center>
               <Image
                 src="app-developer.svg"
-                alt="Smaint Solution Logo"
+                alt="App developer Logo"
                 className="developer-image"
                 boxSize={{
                   base: "32px",
+                  sm: "52px",
                   lg: "34px",
                   xl: "42px",
                   "2xl": "50px",
@@ -116,7 +120,7 @@ const Section1GridItem2 = () => {
               flexDirection="column"
               justifyContent="space-between"
               // height="80px"
-              py={"15px"}
+              py={{ base: "20px", sm: "30px", lg: "15px" }}
             >
               <Center height="100%">
                 <Image
@@ -129,6 +133,7 @@ const Section1GridItem2 = () => {
                   mx="auto"
                   boxSize={{
                     base: "28px",
+                    sm: "48px",
                     lg: "30px",
                     xl: "34px",
                     "2xl": "40px",
@@ -154,7 +159,7 @@ const Section1GridItem2 = () => {
               flexDirection="column"
               justifyContent="space-between"
               // height="80px"
-              py={"15px"}
+              py={{ base: "20px", sm: "30px", lg: "15px" }}
             >
               <Center height="100%">
                 <Image
@@ -165,6 +170,7 @@ const Section1GridItem2 = () => {
                   mx="auto"
                   boxSize={{
                     base: "28px",
+                    sm: "48px",
                     lg: "30px",
                     xl: "34px",
                     "2xl": "40px",
@@ -191,7 +197,7 @@ const Section1GridItem2 = () => {
               flexDirection="column"
               justifyContent="space-between"
               // height="80px"
-              py={"15px"}
+              py={{ base: "20px", sm: "30px", lg: "15px" }}
             >
               <Center height="100%">
                 <Image
@@ -202,6 +208,7 @@ const Section1GridItem2 = () => {
                   mx="auto"
                   boxSize={{
                     base: "28px",
+                    sm: "48px",
                     lg: "30px",
                     xl: "34px",
                     "2xl": "40px",
@@ -234,14 +241,24 @@ const Section1GridItem2 = () => {
               >
                 <Text
                   color={"whiteAlpha.600"}
-                  fontSize={{ base: "16px", lg: "16px", xl: "18px" }}
+                  fontSize={{
+                    base: "16px",
+                    sm: "18px",
+                    lg: "16px",
+                    xl: "18px",
+                  }}
                   fontWeight={"400"}
                   // letterSpacing={"tight"}
                 >
                   Based In
                 </Text>
                 <Text
-                  fontSize={{ base: "18px", lg: "18px", xl: "22px" }}
+                  fontSize={{
+                    base: "18px",
+                    sm: "22px",
+                    lg: "18px",
+                    xl: "22px",
+                  }}
                   fontWeight={"400"}
                   letterSpacing={"tight"}
                 >
@@ -255,12 +272,14 @@ const Section1GridItem2 = () => {
                   position="relative"
                   width={{
                     base: "44px",
+                    sm: "54px",
                     lg: "44px",
                     xl: "50px",
                     "2xl": "60px",
                   }}
                   height={{
                     base: "44px",
+                    sm: "54px",
                     lg: "44px",
                     xl: "50px",
                     "2xl": "60px",
@@ -276,6 +295,7 @@ const Section1GridItem2 = () => {
                     left={0}
                     boxSize={{
                       base: "44px",
+                      sm: "54px",
                       lg: "44px",
                       xl: "50px",
                       "2xl": "60px",
@@ -291,6 +311,7 @@ const Section1GridItem2 = () => {
                     left={0}
                     boxSize={{
                       base: "44px",
+                      sm: "54px",
                       lg: "44px",
                       xl: "50px",
                       "2xl": "60px",

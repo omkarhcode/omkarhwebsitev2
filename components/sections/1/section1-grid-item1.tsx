@@ -25,8 +25,8 @@ const Section1GridItem1 = () => {
         <Flex>
           <Box
             bg="whiteAlpha.300"
-            w={{ base: "80px", lg: "100px" }}
-            h={{ base: "80px", lg: "100px" }}
+            w={{ base: "80px", sm: "100px" }}
+            h={{ base: "80px", sm: "100px" }}
             borderRadius={"full"}
             overflow={"hidden"}
           >
@@ -35,15 +35,15 @@ const Section1GridItem1 = () => {
                 src="/smiling-min.png"
                 alt="OmkarH Image"
                 borderRadius="full"
-                h={{ base: "80px", lg: "100px" }}
+                h={{ base: "80px", sm: "100px" }}
               />
             </Center>
           </Box>{" "}
           <Spacer />
           <Center display={{ base: "flex", lg: "none" }}>
             <Text
-              fontSize={{ base: "18px" }}
-              lineHeight={{ base: "26px" }}
+              fontSize={{ base: "18px", sm: "28px" }}
+              lineHeight={{ base: "26px", sm: "36px" }}
               fontWeight={"500"}
               letterSpacing={0.01}
             >
@@ -74,7 +74,7 @@ const Section1GridItem1 = () => {
         </Text>
         <Spacer p={"10px"} />
         <Text
-          fontSize={{ base: "16px", lg: "20px" }}
+          fontSize={{ base: "16px", sm: "18px", lg: "20px" }}
           fontWeight={"400"}
           color={"whiteAlpha.800"}
         >
