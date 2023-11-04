@@ -54,7 +54,7 @@ const Section1GridItem2 = () => {
             >
               <Text
                 color={"whiteAlpha.500"}
-                fontSize={"26px"}
+                fontSize={"24px"}
                 fontWeight={"600"}
                 // letterSpacing={"tight"}
               >
@@ -210,7 +210,7 @@ const Section1GridItem2 = () => {
                     src="India-black.svg"
                     alt="India"
                     opacity={hoverIndia ? 0 : 1}
-                    transition="opacity 0.5s" // Transition to apply on opacity change
+                    transition="opacity 0.8s" // Transition to apply on opacity change
                     position="absolute"
                     top={0}
                     left={0}
@@ -219,7 +219,7 @@ const Section1GridItem2 = () => {
                     src="India-color.svg"
                     alt="India"
                     opacity={hoverIndia ? 1 : 0}
-                    transition="opacity 0.5s" // Transition to apply on opacity change
+                    transition="opacity 0.8s" // Transition to apply on opacity change
                     position="absolute"
                     top={0}
                     left={0}
