@@ -23,21 +23,6 @@ import Section1GridItem3 from "./section1-grid-item3";
 import { useState } from "react";
 
 const Section1 = () => {
-  const [hoverLinkedIn, setHoverLinkedIn] = useState(false);
-  const [hoverTwitter, setHoverTwitter] = useState(false);
-  const [hoverGitHub, setHoverGitHub] = useState(false);
-
-  const handleHoverLinkedIn = () => {
-    setHoverLinkedIn(!hoverLinkedIn);
-  };
-
-  const handleHoverTwitter = () => {
-    setHoverTwitter(!hoverTwitter);
-  };
-
-  const handleHoverGitHub = () => {
-    setHoverGitHub(!hoverGitHub);
-  };
   return (
     <>
       <Grid
