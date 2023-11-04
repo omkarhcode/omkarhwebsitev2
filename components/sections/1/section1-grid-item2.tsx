@@ -120,7 +120,7 @@ const Section1GridItem2 = () => {
               flexDirection="column"
               justifyContent="space-between"
               // height="80px"
-              py={{ base: "20px", sm: "30px", lg: "15px" }}
+              py={{ base: "20px", sm: "30px", lg: "25px" }}
             >
               <Center height="100%">
                 <Image
@@ -159,7 +159,7 @@ const Section1GridItem2 = () => {
               flexDirection="column"
               justifyContent="space-between"
               // height="80px"
-              py={{ base: "20px", sm: "30px", lg: "15px" }}
+              py={{ base: "20px", sm: "30px", lg: "25px" }}
             >
               <Center height="100%">
                 <Image
@@ -197,7 +197,7 @@ const Section1GridItem2 = () => {
               flexDirection="column"
               justifyContent="space-between"
               // height="80px"
-              py={{ base: "20px", sm: "30px", lg: "15px" }}
+              py={{ base: "20px", sm: "30px", lg: "25px" }}
             >
               <Center height="100%">
                 <Image
