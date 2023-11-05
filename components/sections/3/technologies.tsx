@@ -193,7 +193,8 @@ const TechnologiesSection = () => {
         templateColumns={{
           base: "repeat(1, 1fr)",
           md: "repeat(1, 1fr)",
-          lg: "repeat(3, 1fr)",
+          lg: "repeat(2, 1fr)",
+          xl: "repeat(3, 1fr)",
         }}
         gap={6}
       >
@@ -216,8 +217,8 @@ const TechnologiesSection = () => {
                   <Spacer px={"10px"} />
                   <Heading
                     as="h3"
-                    fontSize={{ base: "18px", sm: "22px" }}
-                    lineHeight={{ base: "26px", sm: "36px" }}
+                    fontSize={{ base: "20px", sm: "22px" }}
+                    lineHeight={{ base: "28px", sm: "36px" }}
                     fontWeight={"500"}
                     letterSpacing={0.01}
                     color={"white"}
