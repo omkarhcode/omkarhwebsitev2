@@ -202,34 +202,36 @@ const TechnologiesSection = () => {
             <Box
               boxShadow="md"
               borderRadius="20px"
-              p={"20px"}
-              // bgColor={"whiteAlpha.100"}
+              p={"40px"}
+              bgColor={"blackAlpha.900"}
               h={"100%"}
             >
-              <Image
-                src={"/technologies/" + tech.image}
-                alt={tech.title}
-                boxSize={"50px"}
-                mb={"10px"}
-              />
-              <Heading
-                as="h3"
-                fontSize={{ base: "18px", sm: "22px" }}
-                lineHeight={{ base: "26px", sm: "36px" }}
-                fontWeight={"500"}
-                letterSpacing={0.01}
-                color={"white"}
-                mt={0.5}
-                mb={0.5}
-              >
-                {tech.title}
-              </Heading>
-
+              <Flex mb={"20px"}>
+                <Center>
+                  <Image
+                    src={"/technologies/" + tech.image}
+                    alt={tech.title}
+                    boxSize={"40px"}
+                  />
+                  <Spacer px={"10px"} />
+                  <Heading
+                    as="h3"
+                    fontSize={{ base: "18px", sm: "22px" }}
+                    lineHeight={{ base: "26px", sm: "36px" }}
+                    fontWeight={"500"}
+                    letterSpacing={0.01}
+                    color={"white"}
+                    mt={0.5}
+                    mb={0.5}
+                  >
+                    {tech.title}
+                  </Heading>
+                </Center>
+              </Flex>
               <Text
                 fontSize={{ base: "18px", sm: "20px" }}
                 lineHeight={{ base: "26px", sm: "28px" }}
                 fontWeight={"500"}
-                letterSpacing={"tighter"}
                 color={"whiteAlpha.600"}
               >
                 {tech.description.map((content) =>
