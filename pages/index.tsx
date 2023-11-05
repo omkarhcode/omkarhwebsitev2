@@ -4,6 +4,7 @@ import PageLayout from "@/components/layouts/PageLayout";
 import { Box, Flex, Spacer, Text } from "@chakra-ui/react";
 import Section1 from "@/components/sections/1/section1";
 import Section2 from "@/components/sections/2/section2";
+import TechnologiesSection from "@/components/sections/3/technologies";
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
       <Section1 />
       <Spacer m={"40px"} />
       <Section2 />
+      <Spacer m={"60px"} />
+      <TechnologiesSection />
 
       {/* Section 1 End */}
     </PageLayout>
