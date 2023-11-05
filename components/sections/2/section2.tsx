@@ -9,10 +9,12 @@ const Section2 = () => {
         src="/beard.svg"
         alt="OmkarH beard"
         borderRadius="full"
-        h={{ base: "45px" }}
+        // h={{ base: "45px" }}
+        boxSize={"45px"}
       />
       {/* <Spacer p={"5px"} /> */}
       <Text
+        as="h2"
         fontSize={{ base: "18px", sm: "18px" }}
         lineHeight={{ base: "26px", sm: "36px" }}
         fontWeight={"500"}
@@ -61,10 +63,15 @@ const Section2 = () => {
             color={"whiteAlpha.600"}
           >
             Hello, I&#39;m Omkar N Hatalkar, a gifted and focused Full Stack and
-            Mobile App Developer. Proficient in JavaScript, Nest.js, Next.js,
-            CSS and Flutter, I specialize in crafting dynamic web and mobile
-            solutions. I enjoy staying updated with the latest technologies to
-            create innovative digital experiences.
+            Mobile App Developer. Proficient in{" "}
+            <span className="highlight-text">JavaScript</span>,{" "}
+            <span className="highlight-text">Nest.js</span>,{" "}
+            <span className="highlight-text">Next.js</span>,{" "}
+            <span className="highlight-text">CSS</span> and{" "}
+            <span className="highlight-text">Flutter</span>. I specialize in
+            crafting dynamic web and mobile solutions. I enjoy staying updated
+            with the latest technologies to create innovative digital
+            experiences.
           </Text>
         </Box>
       </Flex>
