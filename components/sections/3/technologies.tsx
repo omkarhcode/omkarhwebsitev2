@@ -203,7 +203,7 @@ const TechnologiesSection = () => {
             <Box
               boxShadow="md"
               borderRadius="20px"
-              p={"40px"}
+              p={{ base: "20px", sm: "30px", lg: "40px" }}
               bgColor={"blackAlpha.900"}
               h={"100%"}
               transition={"all 0.3s"}
