@@ -10,14 +10,14 @@ const SocialMediaButton = ({
 }: any) => (
   <a href={href} target="_blank">
     <Box
-      bg={hoverState ? bgColor : "black2"}
-      borderRadius="20px"
-      transition="background-color 0.5s"
-      _hover={{ bg: bgColor }}
       onMouseEnter={() => setHoverState(!hoverState)}
       onMouseLeave={() => setHoverState(!hoverState)}
       onTouchStart={() => setHoverState(!hoverState)}
       onTouchEnd={() => setHoverState(!hoverState)}
+      bg={hoverState ? bgColor : "black2"}
+      borderRadius="20px"
+      transition="background-color 0.5s"
+      // _hover={{ bg: bgColor }}
       display="flex"
       flexDirection="column"
       justifyContent="space-between"
