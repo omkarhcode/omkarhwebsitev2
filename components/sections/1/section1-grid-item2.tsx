@@ -1,5 +1,6 @@
 // components/sections/1/section1-grid-item1.tsx
 
+import SocialMediaButton from "@/components/elements/SocialMediaButton";
 import {
   Box,
   Center,
@@ -18,22 +19,9 @@ const Section1GridItem2 = () => {
   const [hoverGitHub, setHoverGitHub] = useState(false);
   const [hoverIndia, setHoverIndia] = useState(false);
 
-  const handleHoverLinkedIn = () => {
-    setHoverLinkedIn(!hoverLinkedIn);
-  };
-
-  const handleHoverTwitter = () => {
-    setHoverTwitter(!hoverTwitter);
-  };
-
-  const handleHoverGitHub = () => {
-    setHoverGitHub(!hoverGitHub);
-  };
-
   const handleHoverIndia = () => {
     setHoverIndia(!hoverIndia);
   };
-
   return (
     <GridItem rowSpan={3} colSpan={1} className="section1-grid-item2">
       <Grid templateRows="repeat(3, 1fr)" gap={"20px"}>
@@ -106,117 +94,36 @@ const Section1GridItem2 = () => {
         </GridItem>
         {/* Inner - Grid 2 - LinkedIn */}
         <GridItem rowSpan={1} colSpan={1}>
-          <a href="https://www.linkedin.com/in/omkarh/" target="_blank">
-            <Box
-              bg={hoverLinkedIn ? "#0072b1" : "black2"}
-              borderRadius={"20px"}
-              transition="background-color 0.5s"
-              _hover={{
-                bg: "#0072b1",
-              }}
-              onMouseEnter={handleHoverLinkedIn}
-              onMouseLeave={handleHoverLinkedIn}
-              display="flex"
-              flexDirection="column"
-              justifyContent="space-between"
-              // height="80px"
-              py={{ base: "20px", sm: "30px", lg: "25px" }}
-            >
-              <Center height="100%">
-                <Image
-                  src={
-                    hoverLinkedIn ? "linkedin-white.svg" : "linkedin-black.svg"
-                  }
-                  alt="LinkedIn Logo"
-                  transition="all 21s"
-                  display="block"
-                  mx="auto"
-                  boxSize={{
-                    base: "28px",
-                    sm: "48px",
-                    lg: "30px",
-                    xl: "34px",
-                    "2xl": "40px",
-                  }}
-                />
-              </Center>
-            </Box>
-          </a>
+          <SocialMediaButton
+            href="https://www.linkedin.com/in/omkarh/"
+            hoverState={hoverLinkedIn}
+            setHoverState={setHoverLinkedIn}
+            imgSrc="linkedin-black.svg"
+            bgColor="#0072b1"
+            altText="LinkedIn Logo"
+          />
         </GridItem>
         {/* Inner - Grid 3 - Twitter */}
         <GridItem rowSpan={1} colSpan={1}>
-          <a href="https://twitter.com/OHatalkar" target="_blank">
-            <Box
-              bg={hoverTwitter ? "#1da1f2" : "black2"}
-              borderRadius={"20px"}
-              transition="background-color 0.5s"
-              _hover={{
-                bg: "#1da1f2",
-              }}
-              onMouseEnter={handleHoverTwitter}
-              onMouseLeave={handleHoverTwitter}
-              display="flex"
-              flexDirection="column"
-              justifyContent="space-between"
-              // height="80px"
-              py={{ base: "20px", sm: "30px", lg: "25px" }}
-            >
-              <Center height="100%">
-                <Image
-                  src={hoverTwitter ? "twitter-white.svg" : "twitter-black.svg"}
-                  alt="Twitter Logo"
-                  transition="all 21s"
-                  display="block"
-                  mx="auto"
-                  boxSize={{
-                    base: "28px",
-                    sm: "48px",
-                    lg: "30px",
-                    xl: "34px",
-                    "2xl": "40px",
-                  }}
-                />
-              </Center>
-            </Box>
-          </a>
+          <SocialMediaButton
+            href="https://twitter.com/OHatalkar"
+            hoverState={hoverTwitter}
+            setHoverState={setHoverTwitter}
+            imgSrc="twitter-black.svg"
+            bgColor="#1da1f2"
+            altText="Twitter Logo"
+          />
         </GridItem>
         {/* Inner - Grid 4 - GitHub */}
         <GridItem rowSpan={1} colSpan={1}>
-          <a href="https://github.com/omkarhcode/" target="_blank">
-            <Box
-              bg={hoverGitHub ? "#ffa500" : "black2"}
-              borderRadius={"20px"}
-              // h="100%"
-              transition="background-color 0.5s"
-              _hover={{
-                bg: "#ffa500",
-              }}
-              onMouseEnter={handleHoverGitHub}
-              onMouseLeave={handleHoverGitHub}
-              display="flex"
-              flexDirection="column"
-              justifyContent="space-between"
-              // height="80px"
-              py={{ base: "20px", sm: "30px", lg: "25px" }}
-            >
-              <Center height="100%">
-                <Image
-                  src={hoverGitHub ? "github-white.svg" : "github-black.svg"}
-                  alt="GitHub Logo"
-                  transition="all 21s"
-                  display="block"
-                  mx="auto"
-                  boxSize={{
-                    base: "28px",
-                    sm: "48px",
-                    lg: "30px",
-                    xl: "34px",
-                    "2xl": "40px",
-                  }}
-                />
-              </Center>
-            </Box>
-          </a>
+          <SocialMediaButton
+            href="https://github.com/omkarhcode/"
+            hoverState={hoverGitHub}
+            setHoverState={setHoverGitHub}
+            imgSrc="github-black.svg"
+            bgColor="#ffa500"
+            altText="GitHub Logo"
+          />
         </GridItem>
         <GridItem rowSpan={3} colSpan={3} w={"100%"}>
           <Box
@@ -226,6 +133,8 @@ const Section1GridItem2 = () => {
             h="100%"
             onMouseEnter={handleHoverIndia}
             onMouseLeave={handleHoverIndia}
+            onTouchStart={handleHoverIndia}
+            onTouchEnd={handleHoverIndia}
             transition="background-color 0.5s"
             display="flex"
             flexDirection="column"
