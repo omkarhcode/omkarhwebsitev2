@@ -59,6 +59,8 @@ const Section1GridItem3 = () => {
         height="100%"
         onMouseEnter={handleHoverHand}
         onMouseLeave={handleHoverHand}
+        onTouchStart={handleHoverHand}
+        onTouchEnd={handleHoverHand}
         transition="background-color 0.5s"
       >
         <Spacer />

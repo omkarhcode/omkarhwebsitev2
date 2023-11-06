@@ -214,7 +214,7 @@ const TechnologiesSection = () => {
               <Flex mb={"20px"}>
                 <Center>
                   <Image
-                    src={"/technologies/" + tech.image}
+                    src={`/technologies/${tech.image}`}
                     alt={tech.title}
                     boxSize={"40px"}
                   />
