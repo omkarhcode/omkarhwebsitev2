@@ -1,16 +1,16 @@
 .section1-grid-item1 .smiling-image,
-.section1-grid-item1 .arrow-image,
-.section1-grid-item2 .developer-image,
+.section1-grid-item2 .arrow-image,
+.section1-grid-item1 .developer-image,
 .section1-grid-item3 .hand-image {
   transition: transform 1s;
 }
 
-.section1-grid-item1:hover .arrow-image,
+.section1-grid-item2:hover .arrow-image,
 .section1-grid-item3:hover .hand-image {
   transform: translate(0px, -10px);
   transition: transform 1s;
 }
-.section1-grid-item2:hover .developer-image {
+.section1-grid-item1:hover .developer-image {
   transform: scale(1.1, 1.1);
   transition: transform 1s;
 }

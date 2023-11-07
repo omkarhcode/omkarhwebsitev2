@@ -41,38 +41,64 @@ const Section1GridItem1 = () => {
             </Center>
           </Box>{" "}
           <Spacer />
-          <Center display={{ base: "flex", lg: "none" }}>
-            <Text
-              fontSize={{ base: "18px", sm: "28px" }}
-              lineHeight={{ base: "26px", sm: "36px" }}
-              fontWeight={"500"}
-              letterSpacing={0.01}
-            >
-              Your Vision, <br /> My Expertise
-            </Text>
-          </Center>
-          <Center
-            transform="rotate(-90deg)"
-            display={{ base: "none", lg: "flex" }}
-          >
+          <Center pr={"10px"}>
             <Image
-              src="arrow-to-left.svg"
-              alt="arrow svg"
-              className="arrow-image"
-              boxSize={{ lg: "56px", xl: "60px", "2xl": "70px" }}
+              src="app-developer.svg"
+              alt="App developer Logo"
+              className="developer-image"
+              boxSize={{
+                base: "48px",
+                sm: "52px",
+                lg: "50px",
+                xl: "56px",
+                "2xl": "60px",
+              }}
             />
           </Center>
         </Flex>
-        <Spacer p={"10px"} display={{ base: "none", lg: "flex" }} />
-        <Text
-          fontSize={{ lg: "30px", xl: "34px", "2xl": "38px" }}
-          lineHeight={{ lg: "44px", xl: "48px", "2xl": "54px" }}
-          fontWeight={"500"}
-          letterSpacing={0.01}
-          display={{ base: "none", lg: "flex" }}
+        <Spacer p={"10px"} />
+
+        <Box
+          display="flex"
+          flexDirection="column"
+          justifyContent="space-between"
+          // height="100%"
         >
-          Your Vision, <br /> My Expertise
-        </Text>
+          <Text
+            color={"whiteAlpha.500"}
+            fontSize={{
+              base: "16px",
+              sm: "20px",
+              lg: "16px",
+              xl: "18px",
+              "2xl": "22px",
+            }}
+            fontWeight={"700"}
+            letterSpacing={"tight"}
+          >
+            Title
+          </Text>
+          <Text
+            fontSize={{
+              base: "20px",
+              sm: "24px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+            }}
+            lineHeight={{
+              base: "34px",
+              sm: "42px",
+              lg: "26px",
+              xl: "36px",
+              "2xl": "38px",
+            }}
+            fontWeight={"600"}
+            letterSpacing={"tight"}
+          >
+            Full Stack/Generative AI <br />& Mobile-App Developer
+          </Text>
+        </Box>
         <Spacer p={"10px"} />
         <Text
           fontSize={{ base: "16px", sm: "18px", lg: "20px" }}
@@ -82,7 +108,7 @@ const Section1GridItem1 = () => {
           Omkar N Hatalkar
         </Text>
         {/* <Text color={"whiteAlpha.600"} fontSize={"16px"} fontWeight={"400"}>
-          Full Stack and Mobile-App Developer
+          Full Stack/Generative AI and Mobile-App Developer
         </Text> */}
       </Box>
     </GridItem>

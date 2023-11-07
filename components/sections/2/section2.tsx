@@ -62,8 +62,8 @@ const Section2 = () => {
             letterSpacing={"tighter"}
             color={"whiteAlpha.600"}
           >
-            Hello, I&#39;m Omkar N Hatalkar, a gifted and focused Full Stack and
-            Mobile App Developer. Proficient in{" "}
+            Hello, I&#39;m Omkar N Hatalkar, a gifted and focused Full
+            Stack/Generative AI and Mobile App Developer. Proficient in{" "}
             <span className="highlight-text">JavaScript</span>,{" "}
             <span className="highlight-text">Nest.js</span>,{" "}
             <span className="highlight-text">Next.js</span>,{" "}

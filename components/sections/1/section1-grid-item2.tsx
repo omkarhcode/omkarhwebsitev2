@@ -34,60 +34,37 @@ const Section1GridItem2 = () => {
           p={"20px"}
         >
           <Flex>
-            <Box
-              display="flex"
-              flexDirection="column"
-              justifyContent="space-between"
-              height="100%"
+            <Text
+              fontSize={{
+                base: "24px",
+                sm: "28px",
+                lg: "22px",
+                xl: "26px",
+                "2xl": "34px",
+              }}
+              lineHeight={{
+                base: "36px",
+                sm: "42px",
+                lg: "34px",
+                xl: "38px",
+                "2xl": "50px",
+              }}
+              fontWeight={"500"}
+              letterSpacing={0.01}
+              // display={{ base: "none", lg: "flex" }}
             >
-              <Text
-                color={"whiteAlpha.500"}
-                fontSize={{
-                  base: "16px",
-                  sm: "20px",
-                  lg: "16px",
-                  xl: "18px",
-                  "2xl": "22px",
-                }}
-                fontWeight={"700"}
-                letterSpacing={"tight"}
-              >
-                Title
-              </Text>
-              <Text
-                fontSize={{
-                  base: "16px",
-                  sm: "24px",
-                  lg: "16px",
-                  xl: "22px",
-                  "2xl": "24px",
-                }}
-                lineHeight={{
-                  base: "26px",
-                  sm: "36px",
-                  lg: "26px",
-                  xl: "32px",
-                  "2xl": "34px",
-                }}
-                fontWeight={"600"}
-                letterSpacing={"tight"}
-              >
-                Full Stack and <br /> Mobile-App Developer
-              </Text>
-            </Box>
+              Your Vision, <br /> My Expertise
+            </Text>
             <Spacer />
-            <Center>
+            <Center
+              transform="rotate(-90deg)"
+              // display={{ base: "none", lg: "flex" }}
+            >
               <Image
-                src="app-developer.svg"
-                alt="App developer Logo"
-                className="developer-image"
-                boxSize={{
-                  base: "32px",
-                  sm: "52px",
-                  lg: "34px",
-                  xl: "42px",
-                  "2xl": "50px",
-                }}
+                src="arrow-to-left.svg"
+                alt="arrow svg"
+                className="arrow-image"
+                boxSize={{ lg: "56px", xl: "60px", "2xl": "70px" }}
               />
             </Center>
           </Flex>
