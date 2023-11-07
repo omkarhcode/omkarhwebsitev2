@@ -49,9 +49,8 @@ const Footer = () => {
       <Box
         borderWidth={"4px"}
         borderColor={"black2"}
-        borderRadius={"20px"}
+        borderRadius={"15px"}
         borderBottomWidth={"20px"}
-        borderBlockEndWidth={"10px"}
         display="flex"
         flexDirection={{ base: "column", lg: "row" }}
         justifyContent="space-between"
@@ -81,7 +80,7 @@ const Footer = () => {
         <Center>
           <Text
             fontSize={{
-              base: "34px",
+              base: "32px",
               sm: "40px",
               md: "40px",
               lg: "50px",
@@ -312,7 +311,7 @@ const Footer = () => {
           md: "row",
         }}
         textAlign={{ base: "center", md: "unset" }}
-        gap={{ base: "20px", md: 0 }}
+        gap={{ base: "10px", md: 0 }}
       >
         <Text pt={"5px"}>© 2023 All rights reserved</Text>
         <Spacer />
@@ -322,7 +321,7 @@ const Footer = () => {
               px={"15px"}
               py={"5px"}
               borderWidth={"1px"}
-              borderColor={"black2"}
+              borderColor={"#a01fbf"}
               borderRadius={"20px"}
               transition={"all 0.5s"}
               _hover={{
