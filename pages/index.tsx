@@ -5,6 +5,7 @@ import { Box, Flex, Spacer, Text } from "@chakra-ui/react";
 import Section1 from "@/components/sections/1/section1";
 import Section2 from "@/components/sections/2/section2";
 import TechnologiesSection from "@/components/sections/3/technologies";
+import PortfolioSection from "@/components/sections/4/portfolio";
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
       <Section2 />
       <Spacer m={"60px"} />
       <TechnologiesSection />
+      <Spacer m={"60px"} />
+      <PortfolioSection />
 
       {/* Section 1 End */}
     </PageLayout>

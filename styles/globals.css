@@ -31,3 +31,11 @@
   color: #c1c1c1 !important;
   /* border-bottom: 0.1px dotted #c1c1c1; */
 }
+
+.portfolio-card .sub-title {
+  font-weight: 800;
+  font-size: larger;
+}
+.portfolio-card .sub-text {
+  font-size: larger;
+}
