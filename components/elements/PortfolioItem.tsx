@@ -3,7 +3,6 @@ import {
   Heading,
   Text,
   Link,
-  Flex,
   Card,
   CardHeader,
   CardBody,
@@ -27,9 +26,8 @@ const ProjectItem = ({
     borderRadius="20px"
     bgColor={"black2"}
     h={"100%"}
-    transition={"all 0.3s"}
     _hover={{
-      backgroundColor: "black2",
+      background: `linear-gradient(270deg, #1a1a1a 99.1%, ${borderBottomColor} 100%)`,
     }}
     className="portfolio-card"
   >
@@ -84,8 +82,7 @@ const ProjectItem = ({
         <Link
           href={link}
           isExternal
-          color="blue.400"
-          //   textDecoration="underline"
+          color={borderBottomColor}
           fontSize="medium"
         >
           {link}
