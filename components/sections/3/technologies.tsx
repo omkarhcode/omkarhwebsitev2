@@ -156,7 +156,7 @@ const TechnologiesSection = () => {
   ];
 
   return (
-    <Flex direction={"column"} alignItems={"center"}>
+    <Flex id="tech" direction={"column"} alignItems={"center"}>
       <Flex
         direction={"column"}
         mb={"20px"}

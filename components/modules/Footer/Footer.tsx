@@ -47,6 +47,7 @@ const Footer = () => {
   return (
     <>
       <Box
+        id="contact"
         borderWidth={"4px"}
         borderColor={"black2"}
         borderRadius={"15px"}

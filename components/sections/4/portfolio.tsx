@@ -1,18 +1,10 @@
 import React from "react";
-import {
-  Box,
-  Heading,
-  Text,
-  SimpleGrid,
-  Image,
-  Flex,
-  Spacer,
-} from "@chakra-ui/react";
+import { Text, SimpleGrid, Image, Flex, Spacer } from "@chakra-ui/react";
 import ProjectItem from "@/components/elements/PortfolioItem";
 
 const PortfolioSection = () => {
   return (
-    <Flex direction={"column"} alignItems={"center"}>
+    <Flex id="portfolio" direction={"column"} alignItems={"center"}>
       <Flex
         direction={"column"}
         mb={"20px"}

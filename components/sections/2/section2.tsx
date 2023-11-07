@@ -4,7 +4,7 @@ import { Box, Flex, Image, Spacer, Text } from "@chakra-ui/react";
 
 const Section2 = () => {
   return (
-    <Flex direction={"column"} alignItems={"center"}>
+    <Flex id="about" direction={"column"} alignItems={"center"}>
       <Image
         src="/beard.svg"
         alt="OmkarH beard"
