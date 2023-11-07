@@ -160,7 +160,11 @@ const Header = () => {
                   variant="outline"
                   // color={"#c1c1c1"}
                 />
-                <MenuList className="mobile-menu-list">
+                <MenuList
+                  bgColor="#1a1a1a"
+                  color={"whites"}
+                  className="mobile-menu-list"
+                >
                   <MenuItem as="a" href="#home" className="mobile-menu-item">
                     home.
                   </MenuItem>
