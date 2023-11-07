@@ -152,19 +152,15 @@ const Header = () => {
               spacing={{ base: "24px", xl: "22px" }}
               display={{ base: "flex", lg: "none" }}
             >
-              <Menu>
+              <Menu autoSelect={false}>
                 <MenuButton
                   as={IconButton}
                   aria-label="Options"
                   icon={<HamburgerIcon />}
                   variant="outline"
-                  color={"#c1c1c1"}
+                  // color={"#c1c1c1"}
                 />
-                <MenuList
-                  bgColor={"black2"}
-                  color={"gray"}
-                  className="mobile-menu-list"
-                >
+                <MenuList className="mobile-menu-list">
                   <MenuItem as="a" href="#home" className="mobile-menu-item">
                     home.
                   </MenuItem>

@@ -47,11 +47,14 @@
 }
 
 .mobile-menu-list {
+  background-color: #1a1a1a;
+  color: white;
+
   padding-left: 10px;
   padding-bottom: 10px;
 }
 .mobile-menu-item {
-  color: #c1c1c1;
+  color: white;
   background-color: #1a1a1a;
   font-size: 18px;
   /* border-bottom: 2px double #c1c1c1; */
