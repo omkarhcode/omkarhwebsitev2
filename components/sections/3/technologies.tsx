@@ -61,6 +61,10 @@ const TechnologiesSection = () => {
         <span key="highlight1" className="highlight-text">
           PostgresSQL databases
         </span>,
+        ", ",
+        <span key="highlight1" className="highlight-text">
+          MongoDB
+        </span>,
         " and ",
         <span key="highlight1" className="highlight-text">
           Prisma ORM
@@ -91,7 +95,7 @@ const TechnologiesSection = () => {
       image: "dev-ops.svg",
       title: "Dev-ops",
       description: [
-        "Experience with ",
+        "Experience with deployment on ",
         <span key="highlight1" className="highlight-text">
           Vercel
         </span>,
@@ -99,14 +103,17 @@ const TechnologiesSection = () => {
         <span key="highlight1" className="highlight-text">
           Railway
         </span>,
-        ", ",
+        " and ",
         <span key="highlight1" className="highlight-text">
           Digitalocean
         </span>,
-        ", ",
+        ". ",
+        <span key="highlight1" className="highlight-text">
+          CI/CD
+        </span>,
         " and ",
         <span key="highlight1" className="highlight-text">
-          pgAdmin 4
+          SSL setup.
         </span>,
       ],
     },
