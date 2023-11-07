@@ -39,6 +39,7 @@ const ProjectItem = ({
         fontWeight={"500"}
         letterSpacing={0.01}
         color={"white"}
+        pb={"5px"}
         borderBottomColor={borderBottomColor}
         borderBottomWidth={"4px"}
         borderBottomStyle={"double"}

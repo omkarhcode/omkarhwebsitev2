@@ -68,7 +68,7 @@ const PortfolioSection = () => {
       </Flex>
 
       <Spacer p={"10px"} />
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing="30px">
+      <SimpleGrid columns={{ base: 1, lg: 2 }} spacing="30px">
         <ProjectItem
           title="Baby Sure IVF"
           borderBottomColor="#214F9E"
