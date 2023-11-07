@@ -69,8 +69,8 @@ const Section2 = () => {
             <span className="highlight-text">Next.js</span>,{" "}
             <span className="highlight-text">CSS</span> and{" "}
             <span className="highlight-text">Flutter</span>. I specialize in
-            crafting dynamic web and mobile solutions. I enjoy staying updated
-            with the latest technologies to create innovative digital
+            crafting dynamic web and mobile-app solutions. I enjoy staying
+            updated with the latest technologies to create innovative digital
             experiences.
           </Text>
         </Box>

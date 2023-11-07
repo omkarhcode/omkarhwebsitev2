@@ -72,7 +72,7 @@ const Section1GridItem2 = () => {
                 fontWeight={"600"}
                 letterSpacing={"tight"}
               >
-                Full Stack and <br /> Mobile App Developer
+                Full Stack and <br /> Mobile-App Developer
               </Text>
             </Box>
             <Spacer />
@@ -171,7 +171,7 @@ const Section1GridItem2 = () => {
                   fontWeight={"400"}
                   letterSpacing={"tight"}
                 >
-                  {/* Full Stack and <br /> Mobile App Developer */}
+                  {/* Full Stack and <br /> Mobile-App Developer */}
                   Mumbai, India
                 </Text>
               </Box>

@@ -82,7 +82,7 @@ const Section1GridItem1 = () => {
           Omkar N Hatalkar
         </Text>
         {/* <Text color={"whiteAlpha.600"} fontSize={"16px"} fontWeight={"400"}>
-          Full Stack and Mobile App Developer
+          Full Stack and Mobile-App Developer
         </Text> */}
       </Box>
     </GridItem>

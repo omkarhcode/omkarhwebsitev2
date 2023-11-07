@@ -113,7 +113,7 @@ const TechnologiesSection = () => {
         </span>,
         " and ",
         <span key="highlight1" className="highlight-text">
-          SSL setup using Nginx.
+          SSL setup using Nginx
         </span>,
       ],
     },

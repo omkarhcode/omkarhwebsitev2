@@ -28,8 +28,14 @@
 
 .highlight-text {
   font-weight: 600;
+  line-height: 1.5;
   color: #c1c1c1 !important;
+  /* color: white; */
   /* border-bottom: 0.1px dotted #c1c1c1; */
+  background-color: #57575754;
+  padding: 0 5px;
+  /* margin: 0 0 0 1px; */
+  border-radius: 5px;
 }
 
 .portfolio-card .sub-title {
