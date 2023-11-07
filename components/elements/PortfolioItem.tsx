@@ -22,13 +22,9 @@ const ProjectItem = ({
   borderBottomColor,
 }: any) => (
   <Card
-    boxShadow="md"
     borderRadius="20px"
-    bgColor={"black2"}
+    background={`linear-gradient(270deg, #1a1a1a 0%, ${borderBottomColor} 600%)`}
     h={"100%"}
-    _hover={{
-      background: `linear-gradient(270deg, #1a1a1a 99.1%, ${borderBottomColor} 100%)`,
-    }}
     className="portfolio-card"
   >
     <CardHeader pb={"0"}>
@@ -43,6 +39,7 @@ const ProjectItem = ({
         borderBottomColor={borderBottomColor}
         borderBottomWidth={"4px"}
         borderBottomStyle={"double"}
+        // borderBottomStyle={"solid"}
         width={"fit-content"}
       >
         {title}
