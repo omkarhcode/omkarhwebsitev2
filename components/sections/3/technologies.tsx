@@ -107,13 +107,13 @@ const TechnologiesSection = () => {
         <span key="highlight1" className="highlight-text">
           Digitalocean
         </span>,
-        ". ",
+        " with ",
         <span key="highlight1" className="highlight-text">
           CI/CD
         </span>,
         " and ",
         <span key="highlight1" className="highlight-text">
-          SSL setup.
+          SSL setup using Nginx.
         </span>,
       ],
     },
