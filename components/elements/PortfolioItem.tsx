@@ -82,6 +82,7 @@ const ProjectItem = ({
           isExternal
           color={borderBottomColor}
           fontSize="medium"
+          wordBreak={"break-all"}
         >
           {link}
         </Link>
