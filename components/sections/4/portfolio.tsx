@@ -107,7 +107,7 @@ const PortfolioSection = () => {
           role="Developed the entire back-end, Admin dashboard, and assisted with the front-end"
           approach="Focused on a user-centered approach, crafting prompts for different fields to spark innovative ideas and conducting iterative testing for a user-friendly interface"
           technologyStack="Utilized NestJs, Typescript, NextJs, and Prisma ORM, hosted on Railway.app for reliability and scalability"
-          link="https://www.ride365.in/"
+          link="https://promptjourney.aiboat.io/"
         />
       </SimpleGrid>
     </Flex>
