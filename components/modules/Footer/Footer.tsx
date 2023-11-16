@@ -326,7 +326,14 @@ const Footer = () => {
               borderRadius={"20px"}
               transition={"all 0.5s"}
               _hover={{
-                borderColor: "#a01fbf",
+                borderColor: "#00FFFF",
+                color: "white",
+                // bg: "#381fef",
+                textDecoration: "none",
+                transition: "border 0.5s, background 0.5s",
+              }}
+              _focus={{
+                outline: "none",
               }}
               w={"max-content"}
             >

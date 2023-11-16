@@ -54,7 +54,7 @@ const Header = () => {
           <HStack h={20} align="center" justify="space-between">
             <Box>
               <Link
-                as={NextLink}
+                // as={NextLink}
                 href="/"
                 _hover={{
                   textDecoration: "none",
@@ -95,7 +95,7 @@ const Header = () => {
               // mr={{ base: "24px", xl: "42px" }}
             >
               <Link
-                as={NextLink}
+                // as={NextLink}
                 color="white"
                 fontWeight="400"
                 fontSize="16px"
@@ -103,12 +103,22 @@ const Header = () => {
                 borderRadius={"20px"}
                 py={"5px"}
                 px={"10px"}
+                transition={"color 0.5s, background 0.5s"}
+                _hover={{
+                  color: "black",
+                  bg: "white",
+                  textDecoration: "none",
+                  transition: "color 0.5s, background 0.5s",
+                }}
+                _focus={{
+                  outline: "none",
+                }}
                 href="#about"
               >
                 about me.
               </Link>
               <Link
-                as={NextLink}
+                // as={NextLink}
                 color="white"
                 fontWeight="400"
                 fontSize="16px"
@@ -116,12 +126,22 @@ const Header = () => {
                 borderRadius={"20px"}
                 py={"5px"}
                 px={"10px"}
+                transition={"color 0.5s, background 0.5s"}
+                _hover={{
+                  color: "black",
+                  bg: "white",
+                  textDecoration: "none",
+                  transition: "color 0.5s, background 0.5s",
+                }}
+                _focus={{
+                  outline: "none",
+                }}
                 href="#tech"
               >
                 tech.
               </Link>
               <Link
-                as={NextLink}
+                // as={NextLink}
                 color="white"
                 fontWeight="400"
                 fontSize="16px"
@@ -129,12 +149,22 @@ const Header = () => {
                 borderRadius={"20px"}
                 py={"5px"}
                 px={"10px"}
+                transition={"color 0.5s, background 0.5s"}
+                _hover={{
+                  color: "black",
+                  bg: "white",
+                  textDecoration: "none",
+                  transition: "color 0.5s, background 0.5s",
+                }}
+                _focus={{
+                  outline: "none",
+                }}
                 href="#portfolio"
               >
                 portfolio.
               </Link>
               <Link
-                as={NextLink}
+                // as={NextLink}
                 color="white"
                 fontWeight="400"
                 fontSize="16px"
@@ -142,6 +172,16 @@ const Header = () => {
                 borderRadius={"20px"}
                 py={"5px"}
                 px={"10px"}
+                transition={"color 0.5s, background 0.5s"}
+                _hover={{
+                  color: "black",
+                  bg: "white",
+                  textDecoration: "none",
+                  transition: "color 0.5s, background 0.5s",
+                }}
+                _focus={{
+                  outline: "none",
+                }}
                 href="#contact"
               >
                 contact.
@@ -191,229 +231,6 @@ const Header = () => {
         </Box>
       </chakra.header>
       {/* Nav - end */}
-
-      {/* Drawer Start  */}
-      <Flex zIndex="3" display={{ base: "flex", lg: "none" }}>
-        <Drawer
-          isOpen={isOpen}
-          placement="right"
-          onClose={onClose}
-          size={"full"}
-        >
-          <DrawerOverlay />
-          <DrawerContent background="white">
-            <Button
-              position="absolute"
-              top="32px"
-              right="32px"
-              variant="unstyled"
-              p="0"
-              onClick={onClose}
-              _focus={{
-                boxShadow: "none",
-              }}
-              _hover={{
-                bg: "transparent",
-              }}
-            >
-              <CloseIcon boxSize="17px" color={"primary"} />{" "}
-              {/* Adjust the boxSize as needed */}
-            </Button>
-            {/* <DrawerCloseButton /> */}
-            <DrawerBody px="32px">
-              <Flex
-                as="nav"
-                direction="column"
-                justifyContent="center"
-                alignItems="center"
-                height="full"
-              >
-                <Link
-                  // as={NextLink}
-                  color="primary"
-                  fontWeight="nav-link-mobile"
-                  fontSize="nav-link-mobile"
-                  lineHeight="nav-link-mobile"
-                  py={"32px"}
-                  w={"100%"}
-                  textAlign={"center"}
-                  href="/#home"
-                  _hover={{
-                    textDecoration: "none",
-                  }}
-                  onClick={(e) => {
-                    onClose();
-                    e.preventDefault();
-                    router.push("/").then(() => {
-                      const yOffset = 0; // Adjust this value for your offset
-                      const element = document.getElementById("home");
-                      if (element) {
-                        const y =
-                          element.getBoundingClientRect().top +
-                          window.pageYOffset +
-                          yOffset;
-                        window.scrollTo({ top: y, behavior: "smooth" });
-                      }
-                    });
-                  }}
-                >
-                  Home
-                </Link>
-                <Divider borderColor={"secondary"} />
-                <Link
-                  as={NextLink}
-                  color="primary"
-                  fontWeight="nav-link-mobile"
-                  fontSize="nav-link-mobile"
-                  lineHeight="nav-link-mobile"
-                  py={"32px"}
-                  w={"100%"}
-                  textAlign={"center"}
-                  href="/about"
-                  _hover={{
-                    textDecoration: "none",
-                  }}
-                  // onClick={() => router.push("/about")}
-                  onClick={(e) => {
-                    onClose();
-                    e.preventDefault();
-                    router.push("/about");
-                  }}
-                >
-                  About
-                </Link>
-
-                <Divider borderColor={"secondary"} />
-
-                <Link
-                  as={NextLink}
-                  color="primary"
-                  fontWeight="nav-link-mobile"
-                  fontSize="nav-link-mobile"
-                  lineHeight="nav-link-mobile"
-                  py={"32px"}
-                  w={"100%"}
-                  textAlign={"center"}
-                  href="/services"
-                  _hover={{
-                    textDecoration: "none",
-                  }}
-                  onClick={(e) => {
-                    onClose();
-                    e.preventDefault();
-                    router.push("/services");
-                  }}
-                >
-                  Services
-                </Link>
-
-                <Divider borderColor={"secondary"} />
-
-                <Link
-                  // as={NextLink}
-                  color="primary"
-                  fontWeight="nav-link-mobile"
-                  fontSize="nav-link-mobile"
-                  lineHeight="nav-link-mobile"
-                  py={"32px"}
-                  w={"100%"}
-                  textAlign={"center"}
-                  href="/#process"
-                  _hover={{
-                    textDecoration: "none",
-                  }}
-                  onClick={(e) => {
-                    onClose();
-                    e.preventDefault();
-                    router.push("/").then(() => {
-                      const yOffset = -100; // Adjust this value for your offset
-                      const element = document.getElementById("process");
-                      if (element) {
-                        const y =
-                          element.getBoundingClientRect().top +
-                          window.pageYOffset +
-                          yOffset;
-                        window.scrollTo({ top: y, behavior: "smooth" });
-                      }
-                    });
-                  }}
-                >
-                  Process
-                </Link>
-
-                <Divider borderColor={"secondary"} />
-
-                <Link
-                  as={NextLink}
-                  color="primary"
-                  fontWeight="nav-link-mobile"
-                  fontSize="nav-link-mobile"
-                  lineHeight="nav-link-mobile"
-                  py={"32px"}
-                  w={"100%"}
-                  textAlign={"center"}
-                  href="/#blogs"
-                  _hover={{
-                    textDecoration: "none",
-                  }}
-                  onClick={(e) => {
-                    onClose();
-                    e.preventDefault();
-                    router.push("/").then(() => {
-                      const yOffset = -100; // Adjust this value for your offset
-                      const element = document.getElementById("blogs");
-                      if (element) {
-                        const y =
-                          element.getBoundingClientRect().top +
-                          window.pageYOffset +
-                          yOffset;
-                        window.scrollTo({ top: y, behavior: "smooth" });
-                      }
-                    });
-                  }}
-                >
-                  Blogs
-                </Link>
-                <Link
-                  as={NextLink}
-                  width={"full"}
-                  backgroundColor="primary"
-                  color="secondary"
-                  fontSize="nav-button-desktop"
-                  lineHeight="nav-button-desktop"
-                  fontWeight="nav-button-desktop"
-                  mt={"30px"}
-                  py={"20px"}
-                  // mx={"32px"}
-                  textAlign={"center"}
-                  _hover={{
-                    backgroundColor: "secondary",
-                    color: "primary",
-                  }}
-                  borderRadius={0}
-                  href="#get-in-touch"
-                  onClick={(e) => {
-                    onClose();
-                    e.preventDefault();
-                    const yOffset = -100; // Adjust this value for your offset
-                    const element = document.getElementById("get-in-touch");
-                    if (element) {
-                      const y =
-                        element.getBoundingClientRect().top +
-                        window.pageYOffset +
-                        yOffset;
-                      window.scrollTo({ top: y, behavior: "smooth" });
-                    }
-                  }}
-                >
-                  Get in touch
-                </Link>
-              </Flex>
-            </DrawerBody>
-          </DrawerContent>
-        </Drawer>
-      </Flex>
-      {/* Drawer end  */}
     </>
   );
 };
