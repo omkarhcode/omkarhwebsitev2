@@ -190,8 +190,11 @@ const TechnologiesSection = () => {
           letterSpacing={"tighter"}
           color={"whiteAlpha.700"}
         >
-          I&#39;ve worked with various web technologies, covering back-end,
-          front-end, and mobile app development. Some technologies include:
+          I&#39;ve worked with various web technologies, covering{" "}
+          <span className="highlight-text">back-end</span>,{" "}
+          <span className="highlight-text">front-end</span>, and{" "}
+          <span className="highlight-text">mobile app development</span>. Some
+          technologies include:
         </Text>
       </Flex>
 
