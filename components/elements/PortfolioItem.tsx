@@ -12,6 +12,12 @@ import {
   Spacer,
 } from "@chakra-ui/react";
 
+// Function to extract the domain from a URL
+const extractDomain = (url: any) => {
+  const match = url.match(/^(?:https?:\/\/)?(?:www\.)?(.*?\..*?)(?:\/|$)/);
+  return match ? match[1] : url;
+};
+
 const ProjectItem = ({
   title,
   objective,
@@ -75,7 +81,7 @@ const ProjectItem = ({
         )}
       </Stack>
     </CardBody>
-    <CardFooter justifyContent={"flex-end"}>
+    <CardFooter justifyContent={{ base: "flex-end", md: "flex-end" }}>
       {link && (
         <Link
           my={"15px"}
@@ -99,7 +105,7 @@ const ProjectItem = ({
             color: "white",
           }}
         >
-          {link}
+          {extractDomain(link)}
         </Link>
       )}
     </CardFooter>
