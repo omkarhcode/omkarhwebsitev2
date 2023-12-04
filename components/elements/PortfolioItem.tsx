@@ -81,10 +81,12 @@ const ProjectItem = ({
         )}
       </Stack>
     </CardBody>
-    <CardFooter justifyContent={{ base: "flex-end", md: "flex-end" }}>
+    <CardFooter justifyContent={{ base: "stretch", md: "flex-end" }}>
       {link && (
         <Link
           my={"15px"}
+          w={{ base: "full", md: "auto" }}
+          textAlign={"center"}
           href={link}
           isExternal
           // color={borderBottomColor}
@@ -93,8 +95,8 @@ const ProjectItem = ({
           wordBreak={"break-all"}
           border={`2px solid ${borderBottomColor}`}
           bgColor={"transparent"}
-          px={2}
-          py={1}
+          px={3}
+          py={2}
           fontWeight={600}
           borderRadius={4}
           transition="all 0.7s"
