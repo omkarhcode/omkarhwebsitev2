@@ -73,8 +73,8 @@ const PortfolioSection = () => {
           title="OrderDekho"
           borderBottomColor="#F4405E"
           objective="An innovative platform designed for businesses to enhance their customer base, manage inventory seamlessly, and establish a strong online presence. This project stands as a testament to my expertise in crafting end-to-end solutions that seamlessly integrate technology and business objectives"
-          role="Led development of entire infrastructure, covering Backend, Mobile App, and Admin Dashboard"
-          approach="Backend development: Secure authentication, diverse user roles, seamless checkout, and detailed metrics. Flutter-based mobile app for optimal user experience. Admin dashboard with for full control and detailed metrics"
+          role="Development of entire infrastructure, covering Backend, Mobile App, and Admin Dashboard"
+          approach="Backend development includes Secure authentication, diverse user roles, seamless checkout, and detailed metrics. Flutter-based mobile app for optimal user experience. Admin dashboard with for full control and detailed metrics"
           technologyStack="Scalable backend with NestJS, Next.js frontend for dynamic performance, and Flutter mobile app. Digital Ocean manages databases, hosting, and Two-Factor Authentication for secure OTPs"
           link="https://www.orderdekho.com"
         />
@@ -105,6 +105,14 @@ const PortfolioSection = () => {
           link="https://www.babysureivf.com"
         />
         <ProjectItem
+          title="Ride365"
+          borderBottomColor="#FFA500"
+          objective="Provided a transport solution catering to various travel requirements in India"
+          role="Developed the entire back-end APIs"
+          approach="Managed complex driver and agent authentication and approval processes. Established user-friendly ride booking systems and provided comprehensive admin dashboard metrics"
+          link="https://www.ride365.in"
+        />
+        <ProjectItem
           title="Slat Play - An OTT Platform"
           // borderBottomColor="#BB2525"
           borderBottomColor="red"
@@ -119,15 +127,16 @@ const PortfolioSection = () => {
           role="Developed the entire back-end API"
           approach="Implemented RBAC and tackled the challenge of setting up location geofencing using MongoDB for geospatial data"
         />
-        <ProjectItem
-          title="Ride365"
-          borderBottomColor="#FFA500"
-          objective="Provided a transport solution catering to various travel requirements in India"
-          role="Developed the entire back-end APIs"
-          approach="Managed complex driver and agent authentication and approval processes. Established user-friendly ride booking systems and provided comprehensive admin dashboard metrics"
-          link="https://www.ride365.in"
-        />
       </SimpleGrid>
+
+      <Spacer p={"10px"} />
+      <Text
+        fontSize={{ base: "18px", sm: "20px" }}
+        lineHeight={{ base: "26px", sm: "28px" }}
+        color={"whiteAlpha.700"}
+      >
+        etc.
+      </Text>
     </Flex>
   );
 };
