@@ -61,13 +61,22 @@ const PortfolioSection = () => {
       <Spacer p={"10px"} />
       <SimpleGrid columns={{ base: 1, lg: 2 }} spacing="30px">
         <ProjectItem
+          title="FinRM"
+          borderBottomColor="#1156F3"
+          objective="With over 44,000 registered users, this FinTech solution stands as a testament to my ability to navigate intricate financial algorithms, ensuring precision in calculations and delivering a robust backend infrastructure."
+          role="Created the entire backend infrastructure"
+          approach="Executed one of the most intricate projects involving complex algorithms provided by the client. Implemented timely cron jobs for method triggering. Applied conditional values in algorithms for precise calculations. Integrated functionalities for generating and processing Excel sheets."
+          technologyStack="Utilized NestJS, PrismaORM, hosted on DigitalOcean droplets, database clusters, Node Mailer, Sentry for error tracking"
+          link="https://finrm.in"
+        />
+        <ProjectItem
           title="Prompt Journey"
           borderBottomColor="#7421FB"
           objective="Created a platform offering prompts for creativity and productivity enhancement across various industries"
           role="Developed the entire back-end, Admin dashboard, and assisted with the front-end"
           approach="Focused on a user-centered approach, crafting prompts for different fields to spark innovative ideas and conducting iterative testing for a user-friendly interface"
           technologyStack="Utilized NestJs, Typescript, NextJs, and Prisma ORM, hosted on Railway.app for reliability and scalability"
-          link="https://promptjourney.aiboat.io/"
+          link="https://promptjourney.aiboat.io"
         />
         <ProjectItem
           title="PopB"
@@ -76,7 +85,7 @@ const PortfolioSection = () => {
           role="Back-end development"
           approach="Utilized technologies like NextJs, TypeScript, and NestJs to create dynamic QR codes, theme customization, unique domain name/subdomain management, contact saving, and team management"
           technologyStack="Utilized NestJs, Typescript, NextJs, Prisma ORM, and hosted on Digital Ocean"
-          link="https://www.popb.com/"
+          link="https://www.popb.com"
         />
         <ProjectItem
           title="Baby Sure IVF"
@@ -84,7 +93,7 @@ const PortfolioSection = () => {
           objective="Created a platform enabling users to directly connect with the center's receptionist through voice call from the website. Leveraged NestJs WebSockets for real-time communication"
           role="Developed the entire back-end API connected to both the website and its dashboard"
           approach="Implemented a range of back-end APIs and utilized RBAC for multiple user roles (ADMIN, RECEPTIONIST, USER). Incorporated email handling using Nodemailer for easy communication"
-          link="https://www.babysureivf.com/"
+          link="https://www.babysureivf.com"
         />
         <ProjectItem
           title="Slat Play - An OTT Platform"
@@ -106,7 +115,7 @@ const PortfolioSection = () => {
           objective="Provided a transport solution catering to various travel requirements in India"
           role="Developed the entire back-end APIs"
           approach="Managed complex driver and agent authentication and approval processes. Established user-friendly ride booking systems and provided comprehensive admin dashboard metrics"
-          link="https://www.ride365.in/"
+          link="https://www.ride365.in"
         />
       </SimpleGrid>
     </Flex>
