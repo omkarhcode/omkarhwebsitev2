@@ -75,9 +75,10 @@ const ProjectItem = ({
         )}
       </Stack>
     </CardBody>
-    <CardFooter>
+    <CardFooter justifyContent={"flex-end"}>
       {link && (
         <Link
+          my={"15px"}
           href={link}
           isExternal
           // color={borderBottomColor}
