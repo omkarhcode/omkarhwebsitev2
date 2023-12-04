@@ -63,11 +63,20 @@ const PortfolioSection = () => {
         <ProjectItem
           title="FinRM"
           borderBottomColor="#1156F3"
-          objective="With over 44,000 registered users, this FinTech solution stands as a testament to my ability to navigate intricate financial algorithms, ensuring precision in calculations and delivering a robust backend infrastructure."
+          objective="With over 44,000 registered users, this FinTech solution stands as a testament to my ability to navigate intricate financial algorithms, ensuring precision in calculations and delivering a robust backend infrastructure"
           role="Created the entire backend infrastructure"
-          approach="Executed one of the most intricate projects involving complex algorithms provided by the client. Implemented timely cron jobs for method triggering. Applied conditional values in algorithms for precise calculations. Integrated functionalities for generating and processing Excel sheets."
+          approach="Executed one of the most intricate projects involving complex algorithms provided by the client. Implemented timely cron jobs for method triggering. Applied conditional values in algorithms for precise calculations. Integrated functionalities for generating and processing Excel sheets"
           technologyStack="Utilized NestJS, PrismaORM, hosted on DigitalOcean droplets, database clusters, Node Mailer, Sentry for error tracking"
           link="https://finrm.in"
+        />
+        <ProjectItem
+          title="OrderDekho"
+          borderBottomColor="#F4405E"
+          objective="An innovative platform designed for businesses to enhance their customer base, manage inventory seamlessly, and establish a strong online presence. This project stands as a testament to my expertise in crafting end-to-end solutions that seamlessly integrate technology and business objectives"
+          role="Led development of entire infrastructure, covering Backend, Mobile App, and Admin Dashboard"
+          approach="Backend development: Secure authentication, diverse user roles, seamless checkout, and detailed metrics. Flutter-based mobile app for optimal user experience. Admin dashboard with for full control and detailed metrics"
+          technologyStack="Scalable backend with NestJS, Next.js frontend for dynamic performance, and Flutter mobile app. Digital Ocean manages databases, hosting, and Two-Factor Authentication for secure OTPs"
+          link="https://www.orderdekho.com"
         />
         <ProjectItem
           title="Prompt Journey"
@@ -97,7 +106,8 @@ const PortfolioSection = () => {
         />
         <ProjectItem
           title="Slat Play - An OTT Platform"
-          borderBottomColor="#BB2525"
+          // borderBottomColor="#BB2525"
+          borderBottomColor="red"
           objective="Planned to deliver live/on-demand streaming services but didn't launch"
           role="Developed the entire back-end API"
           approach="Constructed back-end APIs linked to the website and its dashboard, implemented RBAC for ADMIN and USER roles, and established comprehensive relations between different tables for movie and web series information"
