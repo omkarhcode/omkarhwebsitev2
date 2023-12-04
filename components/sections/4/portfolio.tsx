@@ -36,7 +36,7 @@ const PortfolioSection = () => {
           letterSpacing={"tighter"}
           color={"white"}
           mb="4"
-        >
+          >
           Crafting Diverse Solutions, Uniting Technology and Innovation
         </Text> */}
 
@@ -54,13 +54,30 @@ const PortfolioSection = () => {
           <span className="highlight-text">MOBILE-APP</span> solutions. I
           specialize in <span className="highlight-text">full deployment</span>,
           setting up <span className="highlight-text">CI/CD</span>, and ensuring
-          secure
-          <span className="highlight-text">SSL</span> configurations.
+          secure <span className="highlight-text">SSL</span> configurations.
         </Text>
       </Flex>
 
       <Spacer p={"10px"} />
       <SimpleGrid columns={{ base: 1, lg: 2 }} spacing="30px">
+        <ProjectItem
+          title="Prompt Journey"
+          borderBottomColor="#7421FB"
+          objective="Created a platform offering prompts for creativity and productivity enhancement across various industries"
+          role="Developed the entire back-end, Admin dashboard, and assisted with the front-end"
+          approach="Focused on a user-centered approach, crafting prompts for different fields to spark innovative ideas and conducting iterative testing for a user-friendly interface"
+          technologyStack="Utilized NestJs, Typescript, NextJs, and Prisma ORM, hosted on Railway.app for reliability and scalability"
+          link="https://promptjourney.aiboat.io/"
+        />
+        <ProjectItem
+          title="PopB"
+          borderBottomColor="#00B8BC"
+          objective="Developed a digital networking platform with unique features, including dynamic QR codes, customizable themes, domain name management, and analytics"
+          role="Back-end development"
+          approach="Utilized technologies like NextJs, TypeScript, and NestJs to create dynamic QR codes, theme customization, unique domain name/subdomain management, contact saving, and team management"
+          technologyStack="Utilized NestJs, Typescript, NextJs, Prisma ORM, and hosted on Digital Ocean"
+          link="https://www.popb.com/"
+        />
         <ProjectItem
           title="Baby Sure IVF"
           borderBottomColor="#214F9E"
@@ -78,7 +95,7 @@ const PortfolioSection = () => {
         />
         <ProjectItem
           title="Meat Wow - E-commerce Platform"
-          borderBottomColor="#FF6969"
+          borderBottomColor="#FFF999"
           objective="A multi-store e-commerce application with the unique feature of setting up location-based geofencing"
           role="Developed the entire back-end API"
           approach="Implemented RBAC and tackled the challenge of setting up location geofencing using MongoDB for geospatial data"
@@ -90,24 +107,6 @@ const PortfolioSection = () => {
           role="Developed the entire back-end APIs"
           approach="Managed complex driver and agent authentication and approval processes. Established user-friendly ride booking systems and provided comprehensive admin dashboard metrics"
           link="https://www.ride365.in/"
-        />
-        <ProjectItem
-          title="PopB"
-          borderBottomColor="#00B8BC"
-          objective="Developed a digital networking platform with unique features, including dynamic QR codes, customizable themes, domain name management, and analytics"
-          role="Back-end development"
-          approach="Utilized technologies like NextJs, TypeScript, and NestJs to create dynamic QR codes, theme customization, unique domain name/subdomain management, contact saving, and team management"
-          technologyStack="Utilized NestJs, Typescript, NextJs, Prisma ORM, and hosted on Digital Ocean"
-          link="https://www.popb.com/"
-        />
-        <ProjectItem
-          title="Prompt Journey"
-          borderBottomColor="#7421FB"
-          objective="Created a platform offering prompts for creativity and productivity enhancement across various industries"
-          role="Developed the entire back-end, Admin dashboard, and assisted with the front-end"
-          approach="Focused on a user-centered approach, crafting prompts for different fields to spark innovative ideas and conducting iterative testing for a user-friendly interface"
-          technologyStack="Utilized NestJs, Typescript, NextJs, and Prisma ORM, hosted on Railway.app for reliability and scalability"
-          link="https://promptjourney.aiboat.io/"
         />
       </SimpleGrid>
     </Flex>
