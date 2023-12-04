@@ -80,9 +80,23 @@ const ProjectItem = ({
         <Link
           href={link}
           isExternal
-          color={borderBottomColor}
-          fontSize="medium"
+          // color={borderBottomColor}
+          color={"white"}
+          fontSize="lg"
           wordBreak={"break-all"}
+          border={`2px solid ${borderBottomColor}`}
+          bgColor={"transparent"}
+          px={2}
+          py={1}
+          fontWeight={600}
+          borderRadius={4}
+          transition="all 0.7s"
+          _hover={{
+            textDecoration: "none",
+            backgroundColor: borderBottomColor,
+            borderColor: "white",
+            color: "white",
+          }}
         >
           {link}
         </Link>
