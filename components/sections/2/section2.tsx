@@ -10,16 +10,16 @@ const Section2 = () => {
         alt="OmkarH beard"
         borderRadius="full"
         // h={{ base: "45px" }}
-        boxSize={"45px"}
+        boxSize={"57px"}
       />
-      {/* <Spacer p={"5px"} /> */}
+      <Spacer p={"5px"} />
       <Text
         as="h2"
         fontSize={{ base: "18px", sm: "18px" }}
         lineHeight={{ base: "26px", sm: "36px" }}
         fontWeight={"500"}
         letterSpacing={0.01}
-        color={"gray"}
+        color={"white"}
       >
         ABOUT ME
       </Text>
