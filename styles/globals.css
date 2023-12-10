@@ -67,14 +67,12 @@
   position: relative;
   color: hsl(186 100% 69%);
   cursor: pointer;
-  padding: 0.05em 0em;
-  /* border: 0.15em solid hsl(186 100% 69%);
-  border-radius: 0.45em; */
+  padding: 0.35em 0.5em;
+  border: 0.15em solid hsl(186 100% 69%);
+  border-radius: 0.45em;
   background: none;
-  /* perspective: 1.2em; */
-  perspective: 16px;
+  perspective: 1.2em;
   font-family: "Raleway", sans-serif;
-  /* font-size: 1.2em; */
   font-size: 16px;
   font-weight: 900;
   letter-spacing: 0.2em;

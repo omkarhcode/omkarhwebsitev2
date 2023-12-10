@@ -91,7 +91,7 @@ const Header = () => {
               </Link>
             </Box>
             <Spacer />
-            {/* <Tooltip
+            <Tooltip
               label="My Resume"
               aria-label="My Resume"
               // hasArrow
@@ -99,23 +99,30 @@ const Header = () => {
               // color={"blackAlpha.600"}
               fontWeight={700}
               placement="left-end"
-            > */}
-            <a
-              href={"https://www.omkarh.fyi/pdfs/Resume-Omkar-Hatalkar.pdf"}
-              target="_blank"
             >
-              <Button className="glowing-btn">
+              <a
+                href={"https://www.omkarh.fyi/pdfs/Resume-Omkar-Hatalkar.pdf"}
+                target="_blank"
+              >
+                {/* <Button className="glowing-btn">
                 <span className="glowing-txt">
                   R<span className="faulty-letter">ES</span>UME
                 </span>
-              </Button>
-              {/* <Box
+              </Button> */}
+                <Box
                   transition="background-color 0.5s"
                   display="flex"
                   flexDirection="column"
                   justifyContent="space-between"
-                  py={{ base: "20px", sm: "30px", lg: "25px" }}
+                  // py={{ base: "20px", sm: "30px", lg: "25px" }}
                   mr={"10px"}
+                  _active={{
+                    boxShadow: "none",
+                  }}
+                  _hover={{
+                    boxShadow: "0 0 2em 0.2em hsl(186 100% 39%)",
+                    transition: "opacity 100ms linear",
+                  }}
                 >
                   <Center height="100%">
                     <Image
@@ -132,9 +139,9 @@ const Header = () => {
                       }}
                     />
                   </Center>
-                </Box> */}
-            </a>
-            {/* </Tooltip> */}
+                </Box>
+              </a>
+            </Tooltip>
 
             <HStack
               as="nav"
