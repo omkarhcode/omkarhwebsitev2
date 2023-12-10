@@ -91,32 +91,31 @@ const Header = () => {
               </Link>
             </Box>
             <Spacer />
-            <Tooltip
+            {/* <Tooltip
               label="My Resume"
               aria-label="My Resume"
               // hasArrow
-              bg={"whiteAlpha.900"}
-              color={"blackAlpha.600"}
+              // bg={"whiteAlpha.900"}
+              // color={"blackAlpha.600"}
               fontWeight={700}
               placement="left-end"
+            > */}
+            <a
+              href={"https://www.omkarh.fyi/pdfs/Resume-Omkar-Hatalkar.pdf"}
+              target="_blank"
             >
-              <a
-                href={"https://www.omkarh.fyi/pdfs/Resume-Omkar-Hatalkar.pdf"}
-                target="_blank"
-              >
-                <Box
-                  // onMouseEnter={() => setHoverState(!hoverState)}
-                  // onMouseLeave={() => setHoverState(!hoverState)}
-                  // onTouchStart={() => setHoverState(!hoverState)}
-                  // onTouchEnd={() => setHoverState(!hoverState)}
-                  // bg={hoverState ? bgColor : "black2"}
-                  borderRadius="20px"
+              <Button className="glowing-btn">
+                <span className="glowing-txt">
+                  R<span className="faulty-letter">ES</span>UME
+                </span>
+              </Button>
+              {/* <Box
                   transition="background-color 0.5s"
-                  // _hover={{ bg: bgColor }}
                   display="flex"
                   flexDirection="column"
                   justifyContent="space-between"
                   py={{ base: "20px", sm: "30px", lg: "25px" }}
+                  mr={"10px"}
                 >
                   <Center height="100%">
                     <Image
@@ -126,17 +125,17 @@ const Header = () => {
                       display="block"
                       mx="auto"
                       boxSize={{
-                        base: "28px",
-                        sm: "38px",
-                        lg: "30px",
-                        xl: "34px",
-                        // "2xl": "40px",
+                        base: "32px",
+                        sm: "32px",
+                        lg: "24px",
+                        xl: "24px",
                       }}
                     />
                   </Center>
-                </Box>
-              </a>
-            </Tooltip>
+                </Box> */}
+            </a>
+            {/* </Tooltip> */}
+
             <HStack
               as="nav"
               spacing={{ base: "24px", xl: "22px" }}
