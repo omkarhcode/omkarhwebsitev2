@@ -99,8 +99,10 @@ const Section1GridItem3 = () => {
                   }}
                   borderRadius={"30px"}
                   _hover={{
+                    transition: "All 0.3s",
                     bgColor: "whiteAlpha.300",
                     color: "#ffffff",
+                    boxShadow: "0 0 1.1em 0.10em #a01fbf",
                   }}
                   transition="all 0.3s"
                 >
@@ -166,6 +168,8 @@ const Section1GridItem3 = () => {
                   }}
                   borderRadius={"30px"}
                   _hover={{
+                    transition: "all 0.3s",
+                    boxShadow: "0 0 1.1em 0.10em #00FFFF",
                     bgColor: "whiteAlpha.300",
                     color: "#ffffff",
                   }}

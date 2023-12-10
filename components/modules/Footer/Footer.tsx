@@ -161,6 +161,7 @@ const Footer = () => {
                   _hover={{
                     bgColor: "whiteAlpha.300",
                     color: "#ffffff",
+                    boxShadow: "0 0 1.1em 0.10em #a01fbf",
                   }}
                   transition="all 0.3s"
                 >
@@ -236,6 +237,7 @@ const Footer = () => {
                   _hover={{
                     bgColor: "whiteAlpha.300",
                     color: "#ffffff",
+                    boxShadow: "0 0 1.1em 0.10em #00FFFF",
                   }}
                   transition="all 0.3s"
                 >
