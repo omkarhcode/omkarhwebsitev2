@@ -32,6 +32,10 @@ const ProjectItem = ({
     background={`linear-gradient(270deg, #1a1a1a 0%, ${borderBottomColor} 600%)`}
     h={"100%"}
     className="portfolio-card"
+    transition="all 0.3s"
+    _hover={{
+      boxShadow: `6px 6px 10px -6px ${borderBottomColor} `,
+    }}
   >
     <CardHeader pb={"0"}>
       <Heading
@@ -53,7 +57,7 @@ const ProjectItem = ({
     </CardHeader>
     <CardBody pb={"0"}>
       <Stack
-        divider={<StackDivider borderColor="#a1a1a1" w={"90%"} />}
+        divider={<StackDivider borderColor="#a1a1a1" w={"95%"} />}
         spacing="4"
       >
         <Box>
@@ -99,12 +103,13 @@ const ProjectItem = ({
           py={2}
           fontWeight={600}
           borderRadius={4}
-          transition="all 0.7s"
+          transition="all 0.3s"
           _hover={{
             textDecoration: "none",
             backgroundColor: borderBottomColor,
-            borderColor: "white",
             color: "white",
+            boxShadow: `6px 6px #fff`,
+            borderRadius: 0,
           }}
         >
           {extractDomain(link)}
