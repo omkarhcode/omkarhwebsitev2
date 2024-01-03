@@ -93,23 +93,24 @@ const ProjectItem = ({
           textAlign={"center"}
           href={link}
           isExternal
-          // color={borderBottomColor}
           color={"white"}
           fontSize="lg"
           wordBreak={"break-all"}
-          border={`2px solid ${borderBottomColor}`}
-          bgColor={"transparent"}
+          border={`1px solid ${borderBottomColor}`}
+          // bgColor={"transparent"}
           px={3}
           py={2}
           fontWeight={600}
-          borderRadius={4}
+          // borderRadius={4}
           transition="all 0.3s"
+          backgroundColor={borderBottomColor}
+          boxShadow="6px 6px #fff"
           _hover={{
             textDecoration: "none",
             backgroundColor: borderBottomColor,
-            color: "white",
-            boxShadow: `6px 6px #fff`,
-            borderRadius: 0,
+            boxShadow: `0px 0px #fff`,
+            border: `1px solid #fff`,
+            // borderRadius: 4,
           }}
         >
           {extractDomain(link)}
