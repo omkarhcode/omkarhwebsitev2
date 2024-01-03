@@ -316,7 +316,7 @@ const Footer = () => {
         textAlign={{ base: "center", md: "unset" }}
         gap={{ base: "10px", md: 0 }}
       >
-        <Text pt={"5px"}>© 2023 All rights reserved</Text>
+        <Text pt={"5px"}>© {new Date().getFullYear()} All rights reserved</Text>
         <Spacer />
         <Center>
           <a href="https://www.buymeacoffee.com/omkarh" target="_blank">
