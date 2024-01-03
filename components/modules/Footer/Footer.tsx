@@ -60,7 +60,7 @@ const Footer = () => {
         onMouseLeave={handleHoverHand}
         onTouchStart={handleHoverHand}
         onTouchEnd={handleHoverHand}
-        transition="background-color 0.5s"
+        transition="background-color 0.5s, border-color 0.7s"
         mx={{
           base: "20px",
           sm: "50px",
@@ -77,6 +77,12 @@ const Footer = () => {
           "2xl": "100px",
         }}
         gap={{ base: "20px" }}
+        // className="add-box-shadow"
+
+        _hover={{
+          borderColor: "#818181",
+          transition: "border-color 0.7s ease-out",
+        }}
       >
         <Center>
           <Text
