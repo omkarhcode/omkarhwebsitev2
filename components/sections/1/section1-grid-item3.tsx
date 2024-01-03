@@ -48,8 +48,9 @@ const Section1GridItem3 = () => {
   };
 
   return (
-    <GridItem rowSpan={3} colSpan={1} className="section1-grid-item3">
+    <GridItem rowSpan={3} colSpan={1}>
       <Box
+        className="section1-grid-item3 add-box-shadow"
         bg="black2"
         borderRadius={"20px"}
         p={"20px"}
@@ -61,7 +62,6 @@ const Section1GridItem3 = () => {
         onMouseLeave={handleHoverHand}
         onTouchStart={handleHoverHand}
         onTouchEnd={handleHoverHand}
-        transition="background-color 0.5s"
       >
         <Spacer />
         <Center>

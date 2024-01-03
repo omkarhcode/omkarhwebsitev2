@@ -216,10 +216,12 @@ const TechnologiesSection = () => {
               p={{ base: "20px", sm: "30px", lg: "40px" }}
               bgColor={"blackAlpha.900"}
               h={"100%"}
-              transition={"all 0.3s"}
+              transition={"background 0.3s, box-shadow 0.7s"}
               _hover={{
                 backgroundColor: "black2",
+                transition: "background 0.3s, box-shadow 0.7s",
               }}
+              className="add-box-shadow"
             >
               <Flex mb={"20px"}>
                 <Center>

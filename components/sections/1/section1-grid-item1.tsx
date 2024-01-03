@@ -12,8 +12,9 @@ import {
 
 const Section1GridItem1 = () => {
   return (
-    <GridItem rowSpan={3} colSpan={1} className="section1-grid-item1">
+    <GridItem rowSpan={3} colSpan={1}>
       <Box
+        className="section1-grid-item1 add-box-shadow"
         bg="black2"
         borderRadius={"20px"}
         p={"20px"}

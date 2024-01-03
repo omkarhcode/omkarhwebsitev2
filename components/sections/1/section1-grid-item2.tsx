@@ -32,6 +32,7 @@ const Section1GridItem2 = () => {
           bg="black2"
           borderRadius={"20px"}
           p={"20px"}
+          className="add-box-shadow"
         >
           <Flex>
             <Text
@@ -117,6 +118,7 @@ const Section1GridItem2 = () => {
             flexDirection="column"
             justifyContent="space-between"
             height="100%"
+            className="add-box-shadow"
           >
             <Flex>
               <Box
