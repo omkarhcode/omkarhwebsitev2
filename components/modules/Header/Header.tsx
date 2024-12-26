@@ -1,14 +1,6 @@
-import NextLink from "next/link";
 import {
   Box,
-  Button,
   Center,
-  Divider,
-  Drawer,
-  DrawerBody,
-  DrawerContent,
-  DrawerOverlay,
-  Flex,
   HStack,
   IconButton,
   Image,
@@ -22,17 +14,24 @@ import {
   Text,
   Tooltip,
   chakra,
-  useColorModeValue,
   useDisclosure,
 } from "@chakra-ui/react";
 
-import React from "react";
-import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
-import router from "next/router";
+import React, { useEffect, useState } from "react";
+import { HamburgerIcon } from "@chakra-ui/icons";
 
 const Header = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  // const { isOpen, onOpen, onClose } = useDisclosure();
+  const [origin, setOrigin] = useState("");
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setOrigin(window.location.origin); // Get the domain after the component mounts
+    }
+  }, []);
+  if (!origin) {
+    return <span>Loading...</span>;
+  }
   return (
     <>
       {/* Nav - Start */}
@@ -101,7 +100,8 @@ const Header = () => {
               placement="left-end"
             >
               <a
-                href={"https://www.omkarh.fyi/pdfs/Resume-Omkar-Hatalkar.pdf"}
+                // href={"https://www.omkarh.com/pdfs/Resume-Omkar-Hatalkar.pdf"}
+                href={`${origin}/pdfs/Resume-Omkar-Hatalkar.pdf`}
                 target="_blank"
               >
                 {/* <Button className="glowing-btn">
